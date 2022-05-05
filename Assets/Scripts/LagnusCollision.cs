@@ -25,35 +25,54 @@ public class LagnusCollision : ScriptableObject, IHandler<LagnusInput>
         if (_interactables is null || _obstacles is null) return input;
 
         var player = _player.Value;
-        var collider = player.Collider;
+        // var collider = player.Collider;
 
-        if (WillIntersect(input.Direction, _interactables))
+        input.Direction = GetNewDirection(player, input.Direction);
+
+
+        return input;
+    }
+
+    Vector2 GetNewDirection(LagnusMovement player, Vector2 input)
+    {
+        float LastHeldX = input.x != 0 ? input.x : player.LastHeldX;
+        float LastHeldY = input.y != 0 ? input.y : player.LastHeldY;
+
+        bool IsDiagonal = input.sqrMagnitude == 2;
+
+        if (WillIntersect(input, _interactables))
         {
-            input.Direction = Vector2.zero;
+            input = Vector2.zero;
             return input;
         }
 
-        if (WillIntersect(input.Direction, _obstacles))
+        if (WillIntersect(input, _obstacles))
         {
-            if (input.Direction.x != 0)
-                input.Direction = input.Direction.With(0, player.LastHeldY);
+            if (IsDiagonal) {
+                Vector2 x = GetNewDirection(player, input.With(y:0));
+                Vector2 y = GetNewDirection(player, input.With(x:0));
+                Debug.Log($"X: {x}; Y: {y}");
+                // Debug.Log(y);
+                return x == y ? x : Vector2.zero;
+            } else if (input.x != 0)
+                input = input.With(0, LastHeldY);
             else
-                input.Direction = input.Direction.With(player.LastHeldX, 0);
+                input = input.With(LastHeldX, 0);
 
-            if (WillIntersect(input.Direction, _interactables))
+            if (WillIntersect(input, _interactables))
                 return input;
-            if (WillIntersect(input.Direction, _obstacles))
+            if (WillIntersect(input, _obstacles))
             {
-                input.Direction *= -1;
+                // if (!IsDiagonal)
+                    input *= -1;
 
-                if (WillIntersect(input.Direction, _obstacles) || WillIntersect(input.Direction, _interactables))
-                    input.Direction = Vector2.zero;
+                if (WillIntersect(input, _obstacles) || WillIntersect(input, _interactables))
+                    input = Vector2.zero;
                 return input;
             }
 
             return input;
         }
-
 
         return input;
     }

@@ -43,4 +43,10 @@ public class LagnusMovement : MonoBehaviour
 
         yield break;
     }
+
+    public void SetLastHeld(float? x = null, float? y = null)
+    {
+        LastHeldX = x ?? LastHeldX;
+        LastHeldY = y ?? LastHeldY;
+    }
 }
