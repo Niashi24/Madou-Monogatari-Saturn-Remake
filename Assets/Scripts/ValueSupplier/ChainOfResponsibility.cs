@@ -6,7 +6,7 @@ using LS.Utilities;
 public class ChainOfResponsibility<T> : ScriptableObject, IValueSupplier<T>
 {
     [SerializeField]
-    protected ObjectReference<IHandler<T>>[] handles;
+    protected ObjectReference<IHandler<T>>[] handlers;
 
     [SerializeField]
     protected ValueReference<T> initialState;
@@ -16,7 +16,7 @@ public class ChainOfResponsibility<T> : ScriptableObject, IValueSupplier<T>
         {
             var output = initialState.Value;
 
-            foreach (var handler in handles)
+            foreach (var handler in handlers)
                 output = handler.Value.Handle(output);
 
             return output;

@@ -23,30 +23,40 @@ public class LagnusMovement : MonoBehaviour
 
     WaitForSeconds WaitAFrame = new WaitForSeconds(1f/60);
 
-    IEnumerator Start()
-    {
-        while (enabled)
+    const float waitTime = 1f/60;
+    float timer = 0;
+
+    void Update() {
+        timer += Time.deltaTime;
+        while (timer >= waitTime)
         {
-            yield return WaitAFrame;
-
-            var input = _input.Value;
-
-            var direction = input.Direction;
-
-            if (direction.x != 0) LastHeldX = direction.x;
-            if (direction.y != 0) LastHeldY = direction.y;
-
-            Debug.DrawRay(transform.position, direction * 30f, Color.green, 1/60f);
-
-            transform.Translate(direction * _pixelsPerFrame.Value);
+            Move();
+            timer -= waitTime;
         }
-
-        yield break;
     }
 
-    public void SetLastHeld(float? x = null, float? y = null)
+    // IEnumerator Start()
+    // {
+    //     while (enabled)
+    //     {
+    //         yield return WaitAFrame;
+    //         Move();
+    //     }
+
+    //     yield break;
+    // }
+
+    private void Move()
     {
-        LastHeldX = x ?? LastHeldX;
-        LastHeldY = y ?? LastHeldY;
+        var input = _input.Value;
+
+        var direction = input.Direction;
+
+        if (direction.x != 0) LastHeldX = direction.x;
+        if (direction.y != 0) LastHeldY = direction.y;
+
+        Debug.DrawRay(transform.position, direction * 30f, Color.green, 1 / 60f);
+
+        transform.Translate(direction * _pixelsPerFrame.Value);
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69051e7d46b080a45868c656163610a7, type: 3}
   m_Name: MainInput
   m_EditorClassIdentifier: 
-  handles:
+  handlers:
   - _object: {fileID: 11400000, guid: 6e402a45db9fae3498473cd398c56456, type: 2}
   initialState:
     useReference: 1

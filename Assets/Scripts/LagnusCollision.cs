@@ -51,9 +51,7 @@ public class LagnusCollision : ScriptableObject, IHandler<LagnusInput>
             if (IsDiagonal) {
                 Vector2 x = GetNewDirection(player, input.With(y:0));
                 Vector2 y = GetNewDirection(player, input.With(x:0));
-                Debug.Log($"X: {x}; Y: {y}");
-                // Debug.Log(y);
-                return x == y ? x : Vector2.zero;
+                input = new Vector2(x.x, y.y);
             } else if (input.x != 0)
                 input = input.With(0, LastHeldY);
             else
@@ -63,7 +61,7 @@ public class LagnusCollision : ScriptableObject, IHandler<LagnusInput>
                 return input;
             if (WillIntersect(input, _obstacles))
             {
-                // if (!IsDiagonal)
+                if (!IsDiagonal)
                     input *= -1;
 
                 if (WillIntersect(input, _obstacles) || WillIntersect(input, _interactables))

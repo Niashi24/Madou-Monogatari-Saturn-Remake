@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PhysicsM/Collision Layer")]
 public class CollisionLayer : ScriptableObject
 {
+    [SerializeField] Color debugColor = Color.green;
+    public Color DebugColor => debugColor;
+
     List<RectCollider> Objects;
 
     void OnEnable() {

@@ -11,8 +11,11 @@ public class RectCollider : MonoBehaviour
     [SerializeField]
     CollisionLayer _layer;
 
-    void OnDrawGizmosSelected() {
-        DebugDrawRect(this, Color.green);    
+    void OnDrawGizmos() {
+        if (_layer is null)
+            DebugDrawRect(this, Color.green);
+        else
+            DebugDrawRect(this, _layer.DebugColor);
     }
 
     void OnEnable() {
