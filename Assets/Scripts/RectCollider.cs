@@ -27,7 +27,12 @@ public class RectCollider : MonoBehaviour
     }
 
     public static void DebugDrawRect(RectCollider rectCollider, Color color) 
-        => DebugDrawRect(rectCollider.transform.position, rectCollider.Rect, color);
+    {
+        Debug.DrawLine(rectCollider.TopLeft, rectCollider.TopRight, color);
+        Debug.DrawLine(rectCollider.TopRight, rectCollider.BottomRight, color);
+        Debug.DrawLine(rectCollider.BottomRight, rectCollider.BottomLeft, color);
+        Debug.DrawLine(rectCollider.TopLeft, rectCollider.BottomLeft, color);
+    }
 
 
     public static void DebugDrawRect(Vector2 origin, Rect rect, Color color)
@@ -64,7 +69,7 @@ public class RectCollider : MonoBehaviour
 
         return thisTopLeft.x < otherTopLeft.x + other.Rect.width &&
                thisTopLeft.x + Rect.width > otherTopLeft.x &&
-               thisTopLeft.y < otherTopLeft.y + other.Rect.height &&
-               thisTopLeft.y + Rect.height > otherTopLeft.y;
+               thisTopLeft.y - Rect.height < otherTopLeft.y &&
+               thisTopLeft.y > otherTopLeft.y - other.Rect.height;
     }
 }

@@ -58,7 +58,7 @@ public class LagnusCollision : ScriptableObject, IHandler<LagnusInput>
                 input = input.With(LastHeldX, 0);
 
             if (WillIntersect(input, _interactables))
-                return input;
+                return Vector2.zero;
             if (WillIntersect(input, _obstacles))
             {
                 if (!IsDiagonal)
@@ -82,9 +82,9 @@ public class LagnusCollision : ScriptableObject, IHandler<LagnusInput>
 
     bool WillIntersect(RectCollider coll, Vector2 direction, int pixels, CollisionLayer layer)
     {
-        coll.transform.Translate(direction * pixels);
+        coll.transform.Translate(direction * pixels, Space.World);
         bool intersects = layer.Intersects(coll);
-        coll.transform.Translate(direction * -pixels);
+        coll.transform.Translate(direction * -pixels, Space.World);
 
         return intersects;
     }

@@ -7,6 +7,8 @@ public struct LagnusInput
     public bool Left, Right, Up, Down;
     
     public bool Interact;
+    
+    public bool Moving;
 
     [ShowInInspector, ReadOnly, HideLabel]
     public Vector2 Direction 
