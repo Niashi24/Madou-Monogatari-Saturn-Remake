@@ -58,5 +58,6 @@ public class LagnusMovement : MonoBehaviour
         Debug.DrawRay(transform.position, direction * 30f, Color.green, 1 / 60f);
 
         transform.Translate(direction * _pixelsPerFrame.Value);
+        Movement = direction;
     }
 }
