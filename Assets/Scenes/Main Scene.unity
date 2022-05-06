@@ -160,6 +160,8 @@ MonoBehaviour:
     width: 32
     height: 40
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactables: []
 --- !u!212 &139173750
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -401,6 +403,8 @@ MonoBehaviour:
     width: 12
     height: 12
   _layer: {fileID: 11400000, guid: 179cadb78db342245b0b0b46a33389ce, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactables: []
 --- !u!114 &190887028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +456,8 @@ MonoBehaviour:
     width: 20
     height: 40
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactables: []
 --- !u!212 &421208125
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -654,7 +660,9 @@ MonoBehaviour:
     y: -10
     width: 12
     height: 12
-  _layer: {fileID: 11400000, guid: 179cadb78db342245b0b0b46a33389ce, type: 2}
+  _layer: {fileID: 0}
+  _debugColor: {r: 1, g: 0.5019608, b: 0, a: 1}
+  _interactables: []
 --- !u!114 &784811453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,6 +793,8 @@ MonoBehaviour:
     width: 20
     height: 40
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactables: []
 --- !u!1 &899794537
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +832,8 @@ MonoBehaviour:
     width: 20
     height: 40
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactables: []
 --- !u!212 &899794539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1008,8 +1020,10 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 20
-    height: 40
+    height: 20
   _layer: {fileID: 11400000, guid: dc5a878700ea52e4bbbbc5750539e3f2, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactables: []
 --- !u!212 &1116817452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1129,6 +1143,8 @@ MonoBehaviour:
     width: 32
     height: 40
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactables: []
 --- !u!212 &1297099644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1218,6 +1234,8 @@ MonoBehaviour:
     width: 20
     height: 40
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactables: []
 --- !u!212 &1677321497
 SpriteRenderer:
   m_ObjectHideFlags: 0

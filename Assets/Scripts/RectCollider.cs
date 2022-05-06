@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using LS.Utilities;
 
-public class RectCollider : MonoBehaviour
+public class RectCollider : MonoBehaviour, IInteractable
 {
     [SerializeField]
     Rect _rect;
@@ -11,9 +12,15 @@ public class RectCollider : MonoBehaviour
     [SerializeField]
     CollisionLayer _layer;
 
+    [SerializeField]
+    Color _debugColor = Color.green;
+
+    [SerializeField]
+    List<ObjectReference<IInteractable>> _interactables;
+
     void OnDrawGizmos() {
         if (_layer is null)
-            DebugDrawRect(this, Color.green);
+            DebugDrawRect(this, _debugColor);
         else
             DebugDrawRect(this, _layer.DebugColor);
     }
@@ -24,32 +31,6 @@ public class RectCollider : MonoBehaviour
      
     void OnDisable() {
         _layer?.Remove(this);    
-    }
-
-    public static void DebugDrawRect(RectCollider rectCollider, Color color) 
-    {
-        Debug.DrawLine(rectCollider.TopLeft, rectCollider.TopRight, color);
-        Debug.DrawLine(rectCollider.TopRight, rectCollider.BottomRight, color);
-        Debug.DrawLine(rectCollider.BottomRight, rectCollider.BottomLeft, color);
-        Debug.DrawLine(rectCollider.TopLeft, rectCollider.BottomLeft, color);
-    }
-
-
-    public static void DebugDrawRect(Vector2 origin, Rect rect, Color color)
-    {
-        var topLeft = new Vector2(
-            origin.x - rect.width / 2 + rect.position.x,
-            origin.y + rect.height / 2 + rect.position.y
-        );
-
-        var topRight = topLeft + Vector2.right * rect.width;
-        var bottomLeft = topLeft + Vector2.down * rect.height;
-        var bottomRight = topLeft + new Vector2(rect.width, -rect.height);
-
-        Debug.DrawLine(topLeft, topRight, color);
-        Debug.DrawLine(topRight, bottomRight, color);
-        Debug.DrawLine(bottomRight, bottomLeft, color);
-        Debug.DrawLine(topLeft, bottomLeft, color);
     }
 
     public Vector2 TopLeft => 
@@ -71,5 +52,38 @@ public class RectCollider : MonoBehaviour
                thisTopLeft.x + Rect.width > otherTopLeft.x &&
                thisTopLeft.y - Rect.height < otherTopLeft.y &&
                thisTopLeft.y > otherTopLeft.y - other.Rect.height;
+    }
+
+    public IEnumerator Interact()
+    {
+        foreach (var interactable in _interactables)
+        {
+            yield return interactable;
+        }
+    }
+
+    public static void DebugDrawRect(RectCollider rectCollider, Color color) 
+    {
+        Debug.DrawLine(rectCollider.TopLeft, rectCollider.TopRight, color);
+        Debug.DrawLine(rectCollider.TopRight, rectCollider.BottomRight, color);
+        Debug.DrawLine(rectCollider.BottomRight, rectCollider.BottomLeft, color);
+        Debug.DrawLine(rectCollider.TopLeft, rectCollider.BottomLeft, color);
+    }
+
+    public static void DebugDrawRect(Vector2 origin, Rect rect, Color color)
+    {
+        var topLeft = new Vector2(
+            origin.x - rect.width / 2 + rect.position.x,
+            origin.y + rect.height / 2 + rect.position.y
+        );
+
+        var topRight = topLeft + Vector2.right * rect.width;
+        var bottomLeft = topLeft + Vector2.down * rect.height;
+        var bottomRight = topLeft + new Vector2(rect.width, -rect.height);
+
+        Debug.DrawLine(topLeft, topRight, color);
+        Debug.DrawLine(topRight, bottomRight, color);
+        Debug.DrawLine(bottomRight, bottomLeft, color);
+        Debug.DrawLine(topLeft, bottomLeft, color);
     }
 }
