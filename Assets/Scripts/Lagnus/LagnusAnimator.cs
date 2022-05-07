@@ -26,7 +26,7 @@ public class LagnusAnimator : MonoBehaviour
         currentDirection = _initialPosition;     
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (_rawInput.Value.Direction != Vector2.zero)
             currentDirection = _rawInput.Value.Direction;
