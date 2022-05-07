@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69051e7d46b080a45868c656163610a7, type: 3}
+  m_Name: Movement Input
+  m_EditorClassIdentifier: 
+  handlers:
+  - _object: {fileID: 11400000, guid: 6e402a45db9fae3498473cd398c56456, type: 2}
+  initialState:
+    useReference: 1
+    value:
+      Left: 0
+      Right: 0
+      Up: 0
+      Down: 0
+      Interact: 0
+      Moving: 0
+    reference:
+      _object: {fileID: 11400000, guid: fcbc89e61deb3ad4fac453fb46a2382b, type: 2}
