@@ -80,7 +80,7 @@ public class LagnusCollision : ScriptableObject, IHandler<LagnusInput>
         return WillIntersect(_player.Value.Collider, direction, _pixelsPerFrame.Value, layer);
     }
 
-    bool WillIntersect(RectCollider coll, Vector2 direction, int pixels, CollisionLayer layer)
+    bool WillIntersect(RectColliderManual coll, Vector2 direction, int pixels, CollisionLayer layer)
     {
         coll.transform.Translate(direction * pixels, Space.World);
         bool intersects = layer.Intersects(coll);

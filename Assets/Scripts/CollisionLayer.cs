@@ -8,7 +8,7 @@ public class CollisionLayer : ScriptableObject
     [SerializeField] Color debugColor = Color.green;
     public Color DebugColor => debugColor;
 
-    List<RectCollider> Objects;
+    List<RectColliderBase> Objects;
 
     void OnEnable() {
         Objects = new();    
@@ -18,18 +18,18 @@ public class CollisionLayer : ScriptableObject
         Objects = null;    
     }
 
-    public void Add(RectCollider rectCollider)
+    public void Add(RectColliderBase rectCollider)
     {
         if (!Objects.Contains(rectCollider))
             Objects.Add(rectCollider);
     }
 
-    public void Remove(RectCollider rectCollider)
+    public void Remove(RectColliderBase rectCollider)
     {
         Objects.Remove(rectCollider);
     }
 
-    public bool Intersects(RectCollider rectCollider)
+    public bool Intersects(RectColliderBase rectCollider)
     {
         foreach (var coll in Objects)
             if (coll.Intersects(rectCollider))
@@ -37,7 +37,7 @@ public class CollisionLayer : ScriptableObject
         return false;
     }
 
-    public bool Intersects(RectCollider original, out RectCollider intersected)
+    public bool Intersects(RectColliderBase original, out RectColliderBase intersected)
     {
         foreach (var coll in Objects)
         {
@@ -51,9 +51,9 @@ public class CollisionLayer : ScriptableObject
         return false;
     }
 
-    public List<RectCollider> IntersectsAll(RectCollider original)
+    public List<RectColliderBase> IntersectsAll(RectColliderBase original)
     {
-        var intersected = new List<RectCollider>();
+        var intersected = new List<RectColliderBase>();
         foreach (var coll in Objects)
         {
             if (coll.Intersects(original))

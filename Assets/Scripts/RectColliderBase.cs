@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using LS.Utilities;
+using UnityEngine;
 
-public class RectCollider : MonoBehaviour, IInteractable
+public abstract class RectColliderBase : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    Rect _rect;
-    public Rect Rect => _rect;
+    public abstract Rect Rect {get;}
 
     [SerializeField]
     CollisionLayer _layer;
@@ -16,7 +14,7 @@ public class RectCollider : MonoBehaviour, IInteractable
     Color _debugColor = Color.green;
 
     [SerializeField]
-    List<ObjectReference<IInteractable>> _interactables;
+    protected List<ObjectReference<IInteractable>> _interactables;
 
     void OnDrawGizmos() {
         if (_layer is null)
@@ -35,15 +33,15 @@ public class RectCollider : MonoBehaviour, IInteractable
 
     public Vector2 TopLeft => 
         new Vector2(
-            transform.position.x - _rect.width / 2 + _rect.position.x,
-            transform.position.y + _rect.height / 2 + _rect.position.y
+            transform.position.x - Rect.width / 2 + Rect.position.x,
+            transform.position.y + Rect.height / 2 + Rect.position.y
         );
 
-    public Vector2 TopRight => TopLeft + Vector2.right * _rect.width;
-    public Vector2 BottomLeft => TopLeft + Vector2.down * _rect.height;
-    public Vector2 BottomRight => TopLeft + new Vector2(_rect.width, -_rect.height);
+    public Vector2 TopRight => TopLeft + Vector2.right * Rect.width;
+    public Vector2 BottomLeft => TopLeft + Vector2.down * Rect.height;
+    public Vector2 BottomRight => TopLeft + new Vector2(Rect.width, -Rect.height);
 
-    public bool Intersects(RectCollider other)
+    public bool Intersects(RectColliderBase other)
     {
         var thisTopLeft = TopLeft;
         var otherTopLeft = other.TopLeft;
@@ -62,7 +60,7 @@ public class RectCollider : MonoBehaviour, IInteractable
         }
     }
 
-    public static void DebugDrawRect(RectCollider rectCollider, Color color) 
+    public static void DebugDrawRect(RectColliderBase rectCollider, Color color) 
     {
         Debug.DrawLine(rectCollider.TopLeft, rectCollider.TopRight, color);
         Debug.DrawLine(rectCollider.TopRight, rectCollider.BottomRight, color);

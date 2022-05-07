@@ -12,9 +12,9 @@ public class LagnusMovement : MonoBehaviour
     ValueReference<int> _pixelsPerFrame;
 
     [SerializeField]
-    RectCollider _collider;
+    RectColliderManual _collider;
 
-    public RectCollider Collider => _collider;
+    public RectColliderManual Collider => _collider;
 
     public Vector2 Movement {get; private set;}
 

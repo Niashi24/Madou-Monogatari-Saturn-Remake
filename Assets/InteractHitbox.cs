@@ -6,7 +6,7 @@ using UnityEngine;
 public class InteractHitbox : MonoBehaviour
 {
     [SerializeField]
-    RectCollider _interactHitbox;
+    RectColliderManual _interactHitbox;
     [SerializeField]
     LagnusMovement _player;
     [SerializeField]
