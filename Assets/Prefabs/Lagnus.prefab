@@ -95,9 +95,11 @@ GameObject:
   - component: {fileID: 2918674921502543968}
   - component: {fileID: 2918674921502543971}
   - component: {fileID: 2918674921502543997}
+  - component: {fileID: 6724507515102030534}
   - component: {fileID: 2918674921502543996}
   - component: {fileID: 2918674921502543994}
   - component: {fileID: 2918674921502543992}
+  - component: {fileID: 2886153056990479314}
   - component: {fileID: 2918674921502543995}
   m_Layer: 0
   m_Name: Lagnus
@@ -190,13 +192,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _layer: {fileID: 11400000, guid: 179cadb78db342245b0b0b46a33389ce, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
-  _interactables: []
+  _interactable:
+    _object: {fileID: 0}
   _rect:
     serializedVersion: 2
     x: 0
     y: -10
     width: 12
     height: 12
+--- !u!114 &6724507515102030534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2918674921502543973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e72230acbed8c4746b96be4153f366a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _input:
+    useReference: 1
+    value:
+      Left: 0
+      Right: 0
+      Up: 0
+      Down: 0
+      Interact: 0
+      Moving: 0
+    reference:
+      _object: {fileID: 11400000, guid: fcbc89e61deb3ad4fac453fb46a2382b, type: 2}
 --- !u!114 &2918674921502543996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,10 +289,35 @@ MonoBehaviour:
       Interact: 0
       Moving: 0
     reference:
-      _object: {fileID: 11400000, guid: fcbc89e61deb3ad4fac453fb46a2382b, type: 2}
+      _object: {fileID: 6724507515102030534}
   _animator: {fileID: 2918674921502543995}
   _spriteRenderer: {fileID: 2918674921502543971}
   _initialPosition: {x: 1, y: -1}
+--- !u!114 &2886153056990479314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2918674921502543973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e18c1341e1750843a9505c97df96b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactHitbox: {fileID: 2918674921966526898}
+  _interactablesLayer: {fileID: 11400000, guid: dc5a878700ea52e4bbbbc5750539e3f2, type: 2}
+  _input:
+    useReference: 1
+    value:
+      Left: 0
+      Right: 0
+      Up: 0
+      Down: 0
+      Interact: 0
+      Moving: 0
+    reference:
+      _object: {fileID: 6724507515102030534}
 --- !u!95 &2918674921502543995
 Animator:
   serializedVersion: 4
@@ -334,7 +385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _layer: {fileID: 0}
   _debugColor: {r: 1, g: 0.5019608, b: 0, a: 1}
-  _interactables: []
+  _interactable:
+    _object: {fileID: 0}
   _rect:
     serializedVersion: 2
     x: 0

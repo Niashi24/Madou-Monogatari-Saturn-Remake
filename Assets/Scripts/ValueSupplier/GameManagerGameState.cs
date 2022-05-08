@@ -8,10 +8,14 @@ public class GameManagerGameState : ScriptableObject, IValueSupplier<GameState>
 {
     public GameState Value
     {
-        get{
+        get
+        {
             if (GameManager.I is null) return default;
             return GameManager.I.State;
         }
-        set{}
+        set
+        {
+            GameManager.I.ChangeScene(value);
+        }
     }
 }

@@ -7,9 +7,8 @@ public class UnityEventInteractable : MonoBehaviour, IInteractable
 {
     [SerializeField]
     UnityEvent _event;
-    public IEnumerator Interact()
+    public void Interact()
     {
         _event?.Invoke();
-        yield break;
     }
 }

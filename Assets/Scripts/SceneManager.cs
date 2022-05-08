@@ -16,6 +16,8 @@ public class SceneManager : MonoSingleton<SceneManager>
     [Button]
     public void ChangeScene(string sceneName)
     {
+        if (GameManager.I.State == GameState.Loading) return;
+
         StartCoroutine(ChangeSceneCoroutine(sceneName));
     }
 

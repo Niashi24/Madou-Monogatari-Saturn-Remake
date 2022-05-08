@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using LS.Utilities;
 using UnityEngine;
 
-public abstract class RectColliderBase : MonoBehaviour, IInteractable
+public abstract class RectColliderBase : MonoBehaviour
 {
     public abstract Rect Rect {get;}
 
@@ -14,7 +14,8 @@ public abstract class RectColliderBase : MonoBehaviour, IInteractable
     Color _debugColor = Color.green;
 
     [SerializeField]
-    protected List<ObjectReference<IInteractable>> _interactables;
+    protected ObjectReference<IInteractable> _interactable;
+    public IInteractable Interactable => _interactable.HasValue ? _interactable.Value : new NullInteractable(this);
 
     void OnDrawGizmos() {
         if (_layer is null)
@@ -50,14 +51,6 @@ public abstract class RectColliderBase : MonoBehaviour, IInteractable
                thisTopLeft.x + Rect.width > otherTopLeft.x &&
                thisTopLeft.y - Rect.height < otherTopLeft.y &&
                thisTopLeft.y > otherTopLeft.y - other.Rect.height;
-    }
-
-    public IEnumerator Interact()
-    {
-        foreach (var interactable in _interactables)
-        {
-            yield return interactable;
-        }
     }
 
     public static void DebugDrawRect(RectColliderBase rectCollider, Color color) 

@@ -21,19 +21,20 @@ public class LagnusPlayerInput : ScriptableObject, IValueSupplier<LagnusInput>
     {
         get
         {
-            LagnusInput output = new LagnusInput();
-            output.Left = Input.GetKey(_left);
-            output.Right = Input.GetKey(_right);
-            output.Down = Input.GetKey(_down);
-            output.Up = Input.GetKey(_up);
+            LagnusInput output = new()
+            {
+                Left = Input.GetKey(_left),
+                Right = Input.GetKey(_right),
+                Down = Input.GetKey(_down),
+                Up = Input.GetKey(_up),
+                Interact = Input.GetKeyDown(_interact)
+            };
 
             //direction might get zero'd so it wouldn't be moving so set it here
             //but in original even if there was no movement it would
             //still play the moving animations as long as
             //there was input
             output.Moving = output.Direction.sqrMagnitude != 0;
-
-            output.Interact = Input.GetKeyDown(_interact);
 
             return output;
         }

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fd3df6edc99674d9ed9127540e8c1b, type: 3}
   m_Name: Triggers
   m_EditorClassIdentifier: 
-  debugColor: {r: 0, g: 1, b: 0, a: 1}
+  debugColor: {r: 1, g: 1, b: 1, a: 1}
