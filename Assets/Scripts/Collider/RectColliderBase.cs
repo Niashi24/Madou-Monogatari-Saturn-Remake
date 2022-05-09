@@ -14,7 +14,7 @@ public abstract class RectColliderBase : MonoBehaviour
     Color _debugColor = Color.green;
 
     [SerializeField]
-    protected ObjectReference<IInteractable> _interactable;
+    ObjectReference<IInteractable> _interactable;
     public IInteractable Interactable => _interactable.HasValue ? _interactable.Value : new NullInteractable(this);
 
     void OnDrawGizmos() {
@@ -25,15 +25,17 @@ public abstract class RectColliderBase : MonoBehaviour
     }
 
     void OnEnable() {
-        _layer?.Add(this);    
+        if (_layer is not null)
+            _layer.Add(this);
     }
      
     void OnDisable() {
-        _layer?.Remove(this);    
+        if (_layer is not null)
+            _layer.Remove(this);
     }
 
     public Vector2 TopLeft => 
-        new Vector2(
+        new(
             transform.position.x - Rect.width / 2 + Rect.position.x,
             transform.position.y + Rect.height / 2 + Rect.position.y
         );

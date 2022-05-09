@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "PhysicsM/Collision Layer")]
@@ -8,6 +9,7 @@ public class CollisionLayer : ScriptableObject
     [SerializeField] Color debugColor = Color.green;
     public Color DebugColor => debugColor;
 
+    [ShowInInspector, ReadOnly]
     List<RectColliderBase> Objects;
 
     void OnEnable() {

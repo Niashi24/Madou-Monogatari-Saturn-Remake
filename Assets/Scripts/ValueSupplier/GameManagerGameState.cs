@@ -15,7 +15,7 @@ public class GameManagerGameState : ScriptableObject, IValueSupplier<GameState>
         }
         set
         {
-            GameManager.I.ChangeScene(value);
+            GameManager.I.ChangeState(value);
         }
     }
 }

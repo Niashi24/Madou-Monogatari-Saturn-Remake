@@ -18,12 +18,12 @@ public class LagnusAnimator : MonoBehaviour
     SpriteRenderer _spriteRenderer;
 
     [SerializeField]
-    Vector2 _initialPosition;
+    Vector2 _initialDirection;
 
     Vector2 currentDirection;
 
     void Start() {
-        currentDirection = _initialPosition;     
+        currentDirection = _initialDirection;     
     }
 
     void LateUpdate()
@@ -38,5 +38,10 @@ public class LagnusAnimator : MonoBehaviour
         _animator.SetBool("Moving", _rawInput.Value.Moving);
 
         _spriteRenderer.flipX = targetDirection.x == 1;
+    }
+
+    public void SetDirection(Vector2 direction)
+    {
+        currentDirection = _initialDirection;
     }
 }

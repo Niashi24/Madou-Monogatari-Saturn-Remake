@@ -14,14 +14,14 @@ public class SceneManager : MonoSingleton<SceneManager>
     float _fadeTime = 0.5f;
 
     [Button]
-    public void ChangeScene(string sceneName)
+    public void ChangeScene(string sceneName, SceneEntranceKey entranceKey)
     {
         if (GameManager.I.State == GameState.Loading) return;
 
-        StartCoroutine(ChangeSceneCoroutine(sceneName));
+        StartCoroutine(ChangeSceneCoroutine(sceneName, entranceKey));
     }
 
-    private IEnumerator ChangeSceneCoroutine(string sceneName)
+    private IEnumerator ChangeSceneCoroutine(string sceneName, SceneEntranceKey entranceKey)
     {
         var prevState = GameManager.I.State;
         GameManager.I.ChangeState(GameState.Loading);
@@ -29,6 +29,7 @@ public class SceneManager : MonoSingleton<SceneManager>
         yield return _blackScreen.DOFade(1f, _fadeTime).WaitForCompletion();
 
         yield return UnitySceneManager.LoadSceneAsync(sceneName, UnityEngine.SceneManagement.LoadSceneMode.Single);
+        FindObjectOfType<SceneEntrance>().LoadEntrance(entranceKey);
 
         yield return _blackScreen.DOFade(0f, _fadeTime).WaitForCompletion();
 

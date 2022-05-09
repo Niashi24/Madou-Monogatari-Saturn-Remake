@@ -192,7 +192,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "ff2bf30eab36cb5c13b2ca57e7925af0534b474a"
+      "hash": "472d07b24a6b75da8ecc4763a838373817c70341"
     },
     "ls.value-reference": {
       "version": "https://github.com/Leoshe22/ValueReference.git",

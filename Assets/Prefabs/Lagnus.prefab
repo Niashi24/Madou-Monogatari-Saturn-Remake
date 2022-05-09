@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 2918674921502543994}
   - component: {fileID: 2918674921502543992}
   - component: {fileID: 2886153056990479314}
+  - component: {fileID: 1869295997451290975}
   - component: {fileID: 2918674921502543995}
   m_Layer: 0
   m_Name: Lagnus
@@ -315,6 +316,31 @@ MonoBehaviour:
       Up: 0
       Down: 0
       Interact: 0
+      Moving: 0
+    reference:
+      _object: {fileID: 6724507515102030534}
+--- !u!114 &1869295997451290975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2918674921502543973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e18c1341e1750843a9505c97df96b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactHitbox: {fileID: 2918674921502543997}
+  _interactablesLayer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
+  _input:
+    useReference: 0
+    value:
+      Left: 0
+      Right: 0
+      Up: 0
+      Down: 0
+      Interact: 1
       Moving: 0
     reference:
       _object: {fileID: 6724507515102030534}
