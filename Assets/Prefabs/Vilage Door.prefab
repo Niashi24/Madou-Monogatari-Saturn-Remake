@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4957853572093372213}
   - component: {fileID: 4957853572093372212}
   m_Layer: 0
-  m_Name: Door
+  m_Name: House B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 3}
+  m_AnchoredPosition: {x: 0, y: 4}
   m_SizeDelta: {x: 44, y: 26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4957853572093372213
@@ -70,6 +70,7 @@ MonoBehaviour:
   _scene:
     sceneAsset: {fileID: 102900000, guid: 9943f1d5a18d34f43976ce2fe1df1d1e, type: 3}
     scenePath: Assets/Scenes/House A.unity
+  _entranceKey: {fileID: 11400000, guid: 134c3c43c9ec84a4793fa8b182344880, type: 2}
 --- !u!1 &4957853572392405463
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +177,7 @@ MonoBehaviour:
   _rect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 1
     width: 44
     height: 48
 --- !u!114 &4957853572392405467
