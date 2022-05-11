@@ -16,4 +16,24 @@ public static class RigidbodyExtensions
             y ?? original.y
         );
     }
+
+    public static Vector3 With(this Vector3 original, float? x = null, float? y = null, float? z = null)
+    {
+        return new Vector3(
+            x ?? original.x,
+            y ?? original.y,
+            z ?? original.z
+        );
+    }
+
+    public static float Round(this float value, float unit)
+    {
+        return ((int)(value / unit)) * unit;
+    }
+
+    public static T Log<T>(this T subject)
+    {
+        Debug.Log(subject);
+        return subject;
+    }
 }
