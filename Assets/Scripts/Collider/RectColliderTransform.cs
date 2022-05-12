@@ -30,7 +30,7 @@ public class RectColliderTransform : RectColliderBase
 
         transform.position = transform.position.With(
             x: width % 4 == 0 ? x.Round(2) : x.Round(2) + (x > 0 ? 1 : -1),
-            y: (height % 4 == 0 ? y.Round(2) : y.Round(2) + (y > 0 ? 1 : -1)).Log(),
+            y: height % 4 == 0 ? y.Round(2) : y.Round(2) + (y > 0 ? 1 : -1),
             z: transform.position.z
         );
     }

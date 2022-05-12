@@ -425,6 +425,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  _defaultEntranceData:
+    _spawnPoint: {fileID: 190974125}
+    _playerSpawnDirection: {x: 0, y: 1}
   _playerAnimator: {fileID: 1776111718}
 --- !u!4 &880631467
 Transform:

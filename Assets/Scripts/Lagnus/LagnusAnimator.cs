@@ -22,7 +22,7 @@ public class LagnusAnimator : MonoBehaviour
 
     Vector2 currentDirection;
 
-    void Start() {
+    void Awake() {
         currentDirection = _initialDirection;     
     }
 
@@ -42,6 +42,6 @@ public class LagnusAnimator : MonoBehaviour
 
     public void SetDirection(Vector2 direction)
     {
-        currentDirection = _initialDirection;
+        currentDirection = direction;
     }
 }

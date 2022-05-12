@@ -9,16 +9,25 @@ public class SceneEntrance : SerializedMonoBehaviour
     Dictionary<SceneEntranceKey, SceneEntranceData> _dictionary = new();
 
     [SerializeField]
+    SceneEntranceData _defaultEntranceData;
+
+    [SerializeField]
     LagnusAnimator _playerAnimator;
 
     public void LoadEntrance(SceneEntranceKey entranceKey)
     {
-        if (!_dictionary.ContainsKey(entranceKey))
+        SceneEntranceData entranceData;
+        if (entranceKey is not null && _dictionary.ContainsKey(entranceKey))
+            entranceData = _dictionary[entranceKey];
+        else
         {
-            Debug.LogError($"No data for entrance key \"{entranceKey.name}\"");
-            return;
+            if (entranceKey is null)
+                Debug.LogError("No entrance key.");
+            else
+                Debug.LogError($"No data for entrance key \"{entranceKey.name}\"");
+            entranceData = _defaultEntranceData;
         }
-        var entranceData = _dictionary[entranceKey];
+        
         _playerAnimator.transform.position = entranceData.SpawnPoint.position;
 
         _playerAnimator.SetDirection(entranceData.PlayerSpawnDirection);
