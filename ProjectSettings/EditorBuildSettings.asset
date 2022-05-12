@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House A.unity
     guid: 9943f1d5a18d34f43976ce2fe1df1d1e
+  - enabled: 1
+    path: Assets/Scenes/House B.unity
+    guid: 97b7418565797c2449fb20db04f5b607
+  - enabled: 1
+    path: Assets/Scenes/House C.unity
+    guid: 3738a6084053be04da79090140e611c4
   m_configObjects: {}

@@ -233,6 +233,7 @@ MonoBehaviour:
   _settings:
     useReference: 0
     value:
+      _masterVolume: 1
       _sfxVolume: 1
       _bgmVolume: 1
     reference:

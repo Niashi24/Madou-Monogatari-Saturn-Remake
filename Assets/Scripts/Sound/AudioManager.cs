@@ -48,17 +48,17 @@ public class AudioManager : MonoSingleton<AudioManager>
 
     void PlayBGM(AudioData bgm)
     {
-        if (currentBGM.Equals(bgm)) return;
+        if (bgm.Equals(currentBGM)) return;
         
         currentBGM = bgm;
-        UpdateSource(_bgmSource, currentBGM.Volume * _settings.Value.BGMVolume, currentBGM.Clip);
+        UpdateSource(_bgmSource, currentBGM.Volume * _settings.Value.BGMVolume * _settings.Value.MasterVolume, currentBGM.Clip);
         _bgmSource.Play();
     }
 
     public void PlaySFX(AudioData sfx)
     {
         // UpdateSource(_sfxSource, sfx.Volume * _settings.Value.SFXVolume, sfx.Clip);
-        _sfxSource.PlayOneShot(sfx.Clip, sfx.Volume * _settings.Value.SFXVolume);
+        _sfxSource.PlayOneShot(sfx.Clip, sfx.Volume * _settings.Value.SFXVolume * _settings.Value.MasterVolume);
     }
 
     void UpdateSource(AudioSource source, float volume, AudioClip clip)
