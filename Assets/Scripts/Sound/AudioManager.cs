@@ -48,6 +48,11 @@ public class AudioManager : MonoSingleton<AudioManager>
         _bgmSource.Play();
     }
 
+    public void StopBGM()
+    {
+        _bgmSource.Stop();
+    }
+
     public void PlaySFX(AudioData sfx)
     {
         // UpdateSource(_sfxSource, sfx.Volume * _settings.Value.SFXVolume, sfx.Clip);

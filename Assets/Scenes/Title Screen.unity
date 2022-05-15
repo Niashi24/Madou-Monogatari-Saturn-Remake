@@ -285,6 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 259959544}
   - component: {fileID: 259959543}
+  - component: {fileID: 259959545}
   m_Layer: 0
   m_Name: BGM Player
   m_TagString: Untagged
@@ -321,6 +322,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259959545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259959542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5d21fe763971047b94c76e9dc9cb9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStart: 1
 --- !u!1 &334318753
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 860424113}
   - component: {fileID: 860424114}
+  - component: {fileID: 860424115}
   m_Layer: 0
   m_Name: Title Screen Player
   m_TagString: Untagged
@@ -543,8 +558,8 @@ MonoBehaviour:
   _compileScreen: {fileID: 207013695}
   _blueBackground: {fileID: 937840175}
   _titleScreenLogo: {fileID: 1841297136}
-  _compileCopyright: {fileID: 1497551363}
   _bgmPlayer: {fileID: 259959543}
+  _portal: {fileID: 860424115}
   OnFinishLogoFade:
     m_PersistentCalls:
       m_Calls:
@@ -560,6 +575,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &860424115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860424112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6b740758144184298946ed5a8dad85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scene:
+    sceneAsset: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+    scenePath: Assets/Scenes/Ancient Village.unity
+  _entranceKey: {fileID: 11400000, guid: f4303c65351ddde409554ba98778d114, type: 2}
 --- !u!1 &937840173
 GameObject:
   m_ObjectHideFlags: 0
