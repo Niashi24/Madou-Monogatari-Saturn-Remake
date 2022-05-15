@@ -493,8 +493,9 @@ GameObject:
   m_Component:
   - component: {fileID: 983154587}
   - component: {fileID: 983154588}
+  - component: {fileID: 983154589}
   m_Layer: 0
-  m_Name: Scene Entrance
+  m_Name: Scene Data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -593,6 +594,20 @@ MonoBehaviour:
     _spawnPoint: {fileID: 1914258151}
     _playerSpawnDirection: {x: 0, y: 1}
   _playerAnimator: {fileID: 479388338}
+--- !u!114 &983154589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983154586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258394f95e72adb46b3db472f97c7082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bgm: {fileID: 11400000, guid: e1430a18861bb094c922d88f16f1668a, type: 2}
+  _onStart: 1
 --- !u!1 &1040050279
 GameObject:
   m_ObjectHideFlags: 0

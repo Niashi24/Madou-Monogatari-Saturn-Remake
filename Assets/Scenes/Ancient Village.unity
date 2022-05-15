@@ -262,7 +262,7 @@ Transform:
   - {fileID: 2119874126}
   - {fileID: 648465451}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &169151805
 PrefabInstance:
@@ -387,8 +387,9 @@ GameObject:
   m_Component:
   - component: {fileID: 414983640}
   - component: {fileID: 414983641}
+  - component: {fileID: 414983642}
   m_Layer: 0
-  m_Name: Scene Entrances
+  m_Name: Scene Data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +413,7 @@ Transform:
   - {fileID: 1288894537}
   - {fileID: 882840314}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &414983641
 MonoBehaviour:
@@ -619,6 +620,20 @@ MonoBehaviour:
     _spawnPoint: {fileID: 882840314}
     _playerSpawnDirection: {x: 0, y: 1}
   _playerAnimator: {fileID: 871526369}
+--- !u!114 &414983642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414983639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258394f95e72adb46b3db472f97c7082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bgm: {fileID: 11400000, guid: e1430a18861bb094c922d88f16f1668a, type: 2}
+  _onStart: 1
 --- !u!1 &478704579
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,9 +702,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scene:
-    sceneAsset: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
-    scenePath: Assets/Scenes/Ancient Village.unity
-  _entranceKey: {fileID: 11400000, guid: 62e1139f2907f68428624a287be762ab, type: 2}
+    sceneAsset: {fileID: 102900000, guid: f5ec7dea947ecac47944cc3624586a04, type: 3}
+    scenePath: Assets/Scenes/Title Screen.unity
+  _entranceKey: {fileID: 0}
 --- !u!1 &609813029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,7 +1151,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1288894536
 GameObject:
@@ -1496,7 +1511,7 @@ Transform:
   - {fileID: 4957853571092949233}
   - {fileID: 918864604}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1884681507
 GameObject:
@@ -1559,7 +1574,7 @@ Transform:
   m_Children:
   - {fileID: 169151806}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1978381832 stripped
 Transform:
@@ -1743,7 +1758,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2918674921502543968, guid: a45ea6e4836a349449394da0cffb364a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2918674921502543968, guid: a45ea6e4836a349449394da0cffb364a, type: 3}
       propertyPath: m_LocalPosition.x

@@ -29,7 +29,9 @@ public class SceneManager : MonoSingleton<SceneManager>
         yield return _blackScreen.DOFade(1f, _fadeTime).WaitForCompletion();
 
         yield return UnitySceneManager.LoadSceneAsync(sceneName, UnityEngine.SceneManagement.LoadSceneMode.Single);
-        FindObjectOfType<SceneEntrance>().LoadEntrance(entranceKey);
+        var sceneEntrance = FindObjectOfType<SceneEntrance>();
+        if (sceneEntrance is not null)
+            sceneEntrance.LoadEntrance(entranceKey);
 
         yield return _blackScreen.DOFade(0f, _fadeTime).WaitForCompletion();
 

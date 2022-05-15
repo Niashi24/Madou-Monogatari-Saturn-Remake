@@ -8,7 +8,7 @@ public class ScenePortal : MonoBehaviour, IInteractable
     [SerializeField]
     [Required]
     SceneReference _scene;
-    [Required]
+    [ValidateInput("@_entranceKey != null", "No entrance key set. Will go to default location", InfoMessageType.Warning)]
     [SerializeField]
     SceneEntranceKey _entranceKey;
 

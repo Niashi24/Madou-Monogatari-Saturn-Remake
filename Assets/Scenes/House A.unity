@@ -274,8 +274,9 @@ GameObject:
   m_Component:
   - component: {fileID: 880631467}
   - component: {fileID: 880631466}
+  - component: {fileID: 880631468}
   m_Layer: 0
-  m_Name: Entrances
+  m_Name: Scene Data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -374,6 +375,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &880631468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880631465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258394f95e72adb46b3db472f97c7082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bgm: {fileID: 11400000, guid: e1430a18861bb094c922d88f16f1668a, type: 2}
+  _onStart: 1
 --- !u!1 &1552865829
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,18 +18,10 @@ public class AudioManager : MonoSingleton<AudioManager>
     [SerializeField]
     ValueReference<AudioSettings> _settings;
 
-    [SerializeField]
-    AudioData _initialBGM;
-
     private AudioData currentBGM;
 
     [ShowInInspector, ReadOnly]
     public int runningSamples => _bgmSource.timeSamples;
-
-    void Start() 
-    {
-        PlayBGM(_initialBGM);
-    }
 
     void Update() {
         HandleBGMLoop();    
@@ -37,6 +29,7 @@ public class AudioManager : MonoSingleton<AudioManager>
 
     private void HandleBGMLoop()
     {
+        if (currentBGM is null) return;
         if (!currentBGM.Loop) return;
 
         if (_bgmSource.timeSamples > currentBGM.LoopEndSamples)
@@ -46,7 +39,7 @@ public class AudioManager : MonoSingleton<AudioManager>
         }
     }
 
-    void PlayBGM(AudioData bgm)
+    public void PlayBGM(AudioData bgm)
     {
         if (bgm.Equals(currentBGM)) return;
         
