@@ -562,7 +562,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 860424113}
-  - component: {fileID: 860424115}
   - component: {fileID: 860424116}
   m_Layer: 0
   m_Name: Title Screen Player
@@ -586,22 +585,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &860424115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860424112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6b740758144184298946ed5a8dad85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scene:
-    sceneAsset: {fileID: 102900000, guid: a126488a2da98e14faaa62ab884cd833, type: 3}
-    scenePath: Assets/Scenes/Opening Crawl.unity
-  _entranceKey: {fileID: 0}
 --- !u!114 &860424116
 MonoBehaviour:
   m_ObjectHideFlags: 0
