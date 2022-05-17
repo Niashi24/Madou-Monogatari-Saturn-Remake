@@ -519,7 +519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489600225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -186, y: -63, z: 0}
+  m_LocalPosition: {x: -234, y: -63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -693,9 +693,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scene:
-    sceneAsset: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
-    scenePath: Assets/Scenes/Ancient Village.unity
-  _entranceKey: {fileID: 11400000, guid: f4303c65351ddde409554ba98778d114, type: 2}
+    sceneAsset: {fileID: 102900000, guid: a126488a2da98e14faaa62ab884cd833, type: 3}
+    scenePath: Assets/Scenes/Opening Crawl.unity
+  _entranceKey: {fileID: 0}
 --- !u!1 &937840173
 GameObject:
   m_ObjectHideFlags: 0
