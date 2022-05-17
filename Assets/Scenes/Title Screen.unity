@@ -275,66 +275,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207013693}
   m_CullTransparentMesh: 1
---- !u!1 &259959542
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 259959544}
-  - component: {fileID: 259959543}
-  - component: {fileID: 259959545}
-  m_Layer: 0
-  m_Name: BGM Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &259959543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259959542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258394f95e72adb46b3db472f97c7082, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bgm: {fileID: 11400000, guid: 0c557f3dcc21b834da9c62c109c39bc2, type: 2}
-  _onStart: 0
---- !u!4 &259959544
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259959542}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &259959545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259959542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5d21fe763971047b94c76e9dc9cb9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onStart: 1
 --- !u!1 &334318753
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +374,7 @@ RectTransform:
   - {fileID: 1841297135}
   - {fileID: 1497551362}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -524,7 +464,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &489600228
 Animator:
@@ -611,7 +551,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &860424112
 GameObject:
@@ -622,8 +562,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 860424113}
-  - component: {fileID: 860424114}
   - component: {fileID: 860424115}
+  - component: {fileID: 860424116}
   m_Layer: 0
   m_Name: Title Screen Player
   m_TagString: Untagged
@@ -644,42 +584,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &860424114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860424112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f483188819a2f86479f8f050c153d72b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _actAgainstAIDSImage: {fileID: 1245188356}
-  _adxImage: {fileID: 185770347}
-  _compileScreen: {fileID: 207013695}
-  _blueBackground: {fileID: 937840175}
-  _titleScreenLogo: {fileID: 1841297136}
-  _bgmPlayer: {fileID: 259959543}
-  _portal: {fileID: 860424115}
-  OnFinishLogoFade:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1497551363}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &860424115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,6 +602,126 @@ MonoBehaviour:
     sceneAsset: {fileID: 102900000, guid: a126488a2da98e14faaa62ab884cd833, type: 3}
     scenePath: Assets/Scenes/Opening Crawl.unity
   _entranceKey: {fileID: 0}
+--- !u!114 &860424116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860424112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0dc9286081e674c84613278fa13669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - rid: 4357923538841894925
+  - rid: 4357923538841894912
+  - rid: 4357923538841894913
+  - rid: 4357923538841894914
+  - rid: 4357923538841894915
+  - rid: 4357923538841894916
+  - rid: 4357923538841894917
+  - rid: 4357923538841894918
+  - rid: 4357923538841894919
+  - rid: 4357923538841894920
+  - rid: 4357923538841894921
+  - rid: 4357923538841894922
+  - rid: 4357923538841894924
+  - rid: 4357923538841894926
+  - rid: 4357923538841894927
+  - rid: 4357923538841894928
+  - rid: 4357923538841894929
+  onStart: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 4357923538841894912
+      type: {class: WaitAction, ns: , asm: Assembly-CSharp}
+      data:
+        _seconds: 1
+    - rid: 4357923538841894913
+      type: {class: ImageFadeAction, ns: , asm: Assembly-CSharp}
+      data:
+        _image: {fileID: 1245188356}
+        _alpha: 1
+        _seconds: 0.25
+    - rid: 4357923538841894914
+      type: {class: WaitAction, ns: , asm: Assembly-CSharp}
+      data:
+        _seconds: 1
+    - rid: 4357923538841894915
+      type: {class: ImageFadeAction, ns: , asm: Assembly-CSharp}
+      data:
+        _image: {fileID: 1245188356}
+        _alpha: 0
+        _seconds: 0.25
+    - rid: 4357923538841894916
+      type: {class: ImageFadeAction, ns: , asm: Assembly-CSharp}
+      data:
+        _image: {fileID: 185770347}
+        _alpha: 1
+        _seconds: 0.25
+    - rid: 4357923538841894917
+      type: {class: WaitAction, ns: , asm: Assembly-CSharp}
+      data:
+        _seconds: 1
+    - rid: 4357923538841894918
+      type: {class: ImageFadeAction, ns: , asm: Assembly-CSharp}
+      data:
+        _image: {fileID: 185770347}
+        _alpha: 0
+        _seconds: 0.25
+    - rid: 4357923538841894919
+      type: {class: ImageFadeAction, ns: , asm: Assembly-CSharp}
+      data:
+        _image: {fileID: 207013695}
+        _alpha: 1
+        _seconds: 0.25
+    - rid: 4357923538841894920
+      type: {class: WaitAction, ns: , asm: Assembly-CSharp}
+      data:
+        _seconds: 3
+    - rid: 4357923538841894921
+      type: {class: ImageFadeAction, ns: , asm: Assembly-CSharp}
+      data:
+        _image: {fileID: 207013695}
+        _alpha: 0
+        _seconds: 0.25
+    - rid: 4357923538841894922
+      type: {class: ImageFadeAction, ns: , asm: Assembly-CSharp}
+      data:
+        _image: {fileID: 937840175}
+        _alpha: 1
+        _seconds: 0.25
+    - rid: 4357923538841894924
+      type: {class: PlayBGMAction, ns: , asm: Assembly-CSharp}
+      data:
+        _music: {fileID: 11400000, guid: 0c557f3dcc21b834da9c62c109c39bc2, type: 2}
+    - rid: 4357923538841894925
+      type: {class: StopBGMAction, ns: , asm: Assembly-CSharp}
+    - rid: 4357923538841894926
+      type: {class: ImageFadeAction, ns: , asm: Assembly-CSharp}
+      data:
+        _image: {fileID: 1841297136}
+        _alpha: 1
+        _seconds: 4
+    - rid: 4357923538841894927
+      type: {class: SetEnabledAction, ns: , asm: Assembly-CSharp}
+      data:
+        _behavior: {fileID: 1497551363}
+        _enabled: 1
+    - rid: 4357923538841894928
+      type: {class: WaitUntilKeyPressed, ns: , asm: Assembly-CSharp}
+      data:
+        _key: 99
+    - rid: 4357923538841894929
+      type: {class: LoadSceneAction, ns: , asm: Assembly-CSharp}
+      data:
+        _scene:
+          sceneAsset: {fileID: 102900000, guid: a126488a2da98e14faaa62ab884cd833, type: 3}
+          scenePath: Assets/Scenes/Opening Crawl.unity
+        _entranceKey: {fileID: 0}
 --- !u!1 &937840173
 GameObject:
   m_ObjectHideFlags: 0
