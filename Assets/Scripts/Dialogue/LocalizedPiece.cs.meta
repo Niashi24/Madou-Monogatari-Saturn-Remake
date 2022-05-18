@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7d99c717708ff2a438adc74b028702ed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _leftIcon: {fileID: -163873693, guid: e3544301f746dab438a01143fbe60704, type: 3}
+  - _middleIcon: {fileID: -163873693, guid: e3544301f746dab438a01143fbe60704, type: 3}
+  - _rightIcon: {fileID: -163873693, guid: e3544301f746dab438a01143fbe60704, type: 3}
+  - _portraits: {fileID: 11400000, guid: 4778cd8120ecfaf438436487362d8c73, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
