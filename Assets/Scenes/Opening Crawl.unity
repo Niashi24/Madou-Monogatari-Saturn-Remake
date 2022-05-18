@@ -601,6 +601,7 @@ MonoBehaviour:
   - rid: 4357923538841894941
   - rid: 4357923538841894942
   - rid: 4357923538841894950
+  - rid: 6796575471735668736
   - rid: 4357923538841894949
   onStart: 1
   references:
@@ -691,6 +692,10 @@ MonoBehaviour:
       type: {class: WaitAction, ns: , asm: Assembly-CSharp}
       data:
         _seconds: 5
+    - rid: 6796575471735668736
+      type: {class: FadeOutBGMAction, ns: , asm: Assembly-CSharp}
+      data:
+        seconds: 2
 --- !u!1 &831360147
 GameObject:
   m_ObjectHideFlags: 0

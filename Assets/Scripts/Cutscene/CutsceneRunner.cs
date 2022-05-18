@@ -24,6 +24,11 @@ public class CutsceneRunner : MonoBehaviour
 
     IEnumerator RunCutsceneCoroutine()
     {
+        var prevState = GameManager.I.State;
+        if (prevState == GameState.Cutscene) yield break;
+
+        GameManager.I.ChangeState(GameState.Cutscene);
+
         CutsceneContext context = new()
         {
             Controller = this,
@@ -42,6 +47,8 @@ public class CutsceneRunner : MonoBehaviour
             
             context.currentIndex = action.GetNextActionIndex(context);
         }
+
+        GameManager.I.ChangeState(prevState);
     }
 
     // [SerializeField]

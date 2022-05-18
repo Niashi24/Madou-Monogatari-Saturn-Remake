@@ -53,10 +53,38 @@ public class AudioManager : MonoSingleton<AudioManager>
         _bgmSource.Stop();
     }
 
+    public Coroutine FadeOutBGM(float seconds)
+    {
+        return StartCoroutine(FadeOutBGMCoroutine(seconds));
+    }
+
+    IEnumerator FadeOutBGMCoroutine(float seconds)
+    {
+        float timer = 0;
+        float initialVolume = currentBGM.Volume * _settings.Value.BGMVolume * _settings.Value.MasterVolume;
+        while (timer < seconds)
+        {
+            yield return null;
+            timer += Time.deltaTime;
+
+            float t = Mathf.Clamp01(timer / seconds);
+
+            _bgmSource.volume = Mathf.Lerp(initialVolume, 0, t);
+        }
+
+        _bgmSource.volume = 0;
+    }
+
     public void PlaySFX(AudioData sfx)
     {
         // UpdateSource(_sfxSource, sfx.Volume * _settings.Value.SFXVolume, sfx.Clip);
         _sfxSource.PlayOneShot(sfx.Clip, sfx.Volume * _settings.Value.SFXVolume * _settings.Value.MasterVolume);
+    }
+
+    public IEnumerator PlaySFXCoroutine(AudioData sfx)
+    {
+        _sfxSource.PlayOneShot(sfx.Clip, sfx.Volume * _settings.Value.SFXVolume * _settings.Value.MasterVolume);
+        yield return new WaitForSeconds(sfx.Clip.length);
     }
 
     void UpdateSource(AudioSource source, float volume, AudioClip clip)

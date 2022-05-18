@@ -614,6 +614,8 @@ MonoBehaviour:
   - rid: 4357923538841894926
   - rid: 4357923538841894927
   - rid: 4357923538841894928
+  - rid: 6796575471735668738
+  - rid: 6796575471735668739
   - rid: 4357923538841894929
   onStart: 1
   references:
@@ -705,6 +707,16 @@ MonoBehaviour:
           sceneAsset: {fileID: 102900000, guid: a126488a2da98e14faaa62ab884cd833, type: 3}
           scenePath: Assets/Scenes/Opening Crawl.unity
         _entranceKey: {fileID: 0}
+    - rid: 6796575471735668738
+      type: {class: PlaySFXAction, ns: , asm: Assembly-CSharp}
+      data:
+        _sfx: {fileID: 11400000, guid: 312cce2a92fe7104fb652ea8b0fa0d5e, type: 2}
+        _waitUntilCompleted: 0
+    - rid: 6796575471735668739
+      type: {class: PlaySFXAction, ns: , asm: Assembly-CSharp}
+      data:
+        _sfx: {fileID: 11400000, guid: 5f79ff240dd07c448a7883d56a3639bf, type: 2}
+        _waitUntilCompleted: 1
 --- !u!1 &937840173
 GameObject:
   m_ObjectHideFlags: 0
