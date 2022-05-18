@@ -18,7 +18,7 @@ public class LocalizedPiece : SerializedScriptableObject
 
     [SerializeField]
     [Required]
-    Dictionary<LanguageKey, TextPiece> text;
+    Dictionary<LanguageKey, TextPiece> text = new();
 
     public TextPiece this[LanguageKey key]
     {

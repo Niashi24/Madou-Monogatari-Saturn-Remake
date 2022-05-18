@@ -1153,6 +1153,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1225548844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1225548845}
+  - component: {fileID: 1225548846}
+  m_Layer: 0
+  m_Name: Test Cutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1225548845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225548844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225548846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225548844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0dc9286081e674c84613278fa13669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - rid: 6796575472757768192
+  - rid: 6796575472757768193
+  - rid: 6796575472757768194
+  onStart: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 6796575472757768192
+      type: {class: PlayDialogueAction, ns: , asm: Assembly-CSharp}
+      data:
+        _dialogue: {fileID: 11400000, guid: f8ce6b5b6ddc19643aed8f105d2f3b76, type: 2}
+    - rid: 6796575472757768193
+      type: {class: PlayDialogueAction, ns: , asm: Assembly-CSharp}
+      data:
+        _dialogue: {fileID: 11400000, guid: 1b910067d5382ce4ba6a9bb723fe81e8, type: 2}
+    - rid: 6796575472757768194
+      type: {class: PlayDialogueAction, ns: , asm: Assembly-CSharp}
+      data:
+        _dialogue: {fileID: 11400000, guid: 8cf4aa7132863ca4fb5d5b194fd9cfc6, type: 2}
 --- !u!1 &1288894536
 GameObject:
   m_ObjectHideFlags: 0
