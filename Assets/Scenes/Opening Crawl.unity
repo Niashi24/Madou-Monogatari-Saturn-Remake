@@ -596,12 +596,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - rid: 6796575472757768198
   - rid: 4357923538841894933
   - rid: 4357923538841894930
   - rid: 4357923538841894941
   - rid: 4357923538841894942
   - rid: 4357923538841894950
   - rid: 6796575471735668736
+  - rid: 6796575472757768199
   - rid: 4357923538841894949
   onStart: 1
   references:
@@ -696,6 +698,14 @@ MonoBehaviour:
       type: {class: FadeOutBGMAction, ns: , asm: Assembly-CSharp}
       data:
         seconds: 2
+    - rid: 6796575472757768198
+      type: {class: ChangeGameState, ns: , asm: Assembly-CSharp}
+      data:
+        _newState: 2
+    - rid: 6796575472757768199
+      type: {class: ChangeGameState, ns: , asm: Assembly-CSharp}
+      data:
+        _newState: 1
 --- !u!1 &831360147
 GameObject:
   m_ObjectHideFlags: 0

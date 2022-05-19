@@ -599,6 +599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - rid: 6796575472757768197
   - rid: 4357923538841894925
   - rid: 4357923538841894912
   - rid: 4357923538841894913
@@ -729,6 +730,10 @@ MonoBehaviour:
       data:
         _behavior: {fileID: 1308398861}
         _enabled: 1
+    - rid: 6796575472757768197
+      type: {class: ChangeGameState, ns: , asm: Assembly-CSharp}
+      data:
+        _newState: 0
 --- !u!1 &937840173
 GameObject:
   m_ObjectHideFlags: 0

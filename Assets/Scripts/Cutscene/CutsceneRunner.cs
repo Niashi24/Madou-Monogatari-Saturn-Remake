@@ -11,6 +11,10 @@ public class CutsceneRunner : MonoBehaviour
     [SerializeField]
     bool onStart = true;
 
+    Coroutine currentCutscene;
+
+    public CutsceneAction CurrentAction {get; private set;}
+
     void Start() {
         if (onStart)
             RunCutscene();
@@ -19,15 +23,22 @@ public class CutsceneRunner : MonoBehaviour
     [Button]
     public void RunCutscene()
     {
-        StartCoroutine(RunCutsceneCoroutine());
+        if (currentCutscene != null)
+            StopCoroutine(currentCutscene);
+        currentCutscene = StartCoroutine(RunCutsceneCoroutine());
+    }
+
+    public void StopCutscene()
+    {
+        if (currentCutscene != null)
+        {
+            StopCoroutine(currentCutscene);
+            currentCutscene = null;
+        }
     }
 
     IEnumerator RunCutsceneCoroutine()
     {
-        var prevState = GameManager.I.State;
-        if (prevState == GameState.Cutscene) yield break;
-
-        GameManager.I.ChangeState(GameState.Cutscene);
 
         CutsceneContext context = new()
         {
@@ -43,12 +54,13 @@ public class CutsceneRunner : MonoBehaviour
         {
             var action = actions[context.currentIndex];
 
+            CurrentAction = action;
+
             yield return action.Execute(context);
             
             context.currentIndex = action.GetNextActionIndex(context);
         }
-
-        GameManager.I.ChangeState(prevState);
+        
     }
 
     // [SerializeField]

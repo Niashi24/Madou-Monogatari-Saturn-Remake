@@ -6,6 +6,7 @@ public class EndCutsceneAction : CutsceneAction
 {
     public override IEnumerator Execute(CutsceneContext context)
     {
+        context.Controller.StopCutscene();
         yield break;
     }
 

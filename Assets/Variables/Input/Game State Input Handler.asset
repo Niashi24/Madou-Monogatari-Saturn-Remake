@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 544bce0cd568394498381ec301bed109, type: 3}
   m_Name: Game State Input Handler
   m_EditorClassIdentifier: 
-  _validStates: 00000000
+  _validStates: 01000000
   _currentState:
     useReference: 1
     value: 0
