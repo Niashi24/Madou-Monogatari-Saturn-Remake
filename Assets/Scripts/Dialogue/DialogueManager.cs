@@ -40,6 +40,7 @@ public class DialogueManager : MonoSingleton<DialogueManager>
         }
         yield return null;
         yield return new WaitUntil(() => ConfirmPressed || HoldSkipHeld);
+        yield return null;
         
         _dialogueSystem.gameObject.SetActive(false);
         Running = false;

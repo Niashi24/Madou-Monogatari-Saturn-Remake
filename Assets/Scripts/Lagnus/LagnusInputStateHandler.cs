@@ -12,9 +12,12 @@ public class LagnusInputStateHandler : ScriptableObject, IHandler<LagnusInput>
     [SerializeField]
     ValueReference<GameState> _currentState;
 
+    [SerializeField]
+    ValueReference<bool> _loading = new(false);
+
     public LagnusInput Handle(LagnusInput input)
     {
-        if (_validStates.Contains(_currentState.Value))
+        if (_validStates.Contains(_currentState.Value) && !_loading.Value)
             return input;
 
         input.Direction = Vector2.zero;

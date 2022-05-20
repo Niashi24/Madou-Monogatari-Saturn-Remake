@@ -377,6 +377,38 @@ Transform:
   m_Father: {fileID: 414983640}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &280008483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280008484}
+  m_Layer: 0
+  m_Name: Characters
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &280008484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280008483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1173190471}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &414983639
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +471,8 @@ MonoBehaviour:
     - {fileID: 1288894537}
     - {fileID: 11400000, guid: f4303c65351ddde409554ba98778d114, type: 2}
     - {fileID: 882840314}
+    - {fileID: 1225548846}
+    - {fileID: 0}
     - {fileID: 11400000, guid: 63cbf3503d0722d47b240213c5e79503, type: 2}
     - {fileID: 1884681508}
     SerializedBytesString: 
@@ -484,6 +518,32 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: OnUseEntrance
+      Entry: 7
+      Data: 3|UnityEngine.Events.UnityEvent`1[[SceneEntranceData, Assembly-CSharp]],
+        UnityEngine.CoreModule
+    - Name: m_PersistentCalls
+      Entry: 7
+      Data: 4|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
+    - Name: m_Calls
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[UnityEngine.Events.PersistentCall,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -498,7 +558,7 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 3|SceneEntranceData, Assembly-CSharp
+      Data: 6|SceneEntranceData, Assembly-CSharp
     - Name: _spawnPoint
       Entry: 10
       Data: 3
@@ -511,6 +571,32 @@ MonoBehaviour:
     - Name: 
       Entry: 4
       Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnUseEntrance
+      Entry: 7
+      Data: 7|UnityEngine.Events.UnityEvent`1[[SceneEntranceData, Assembly-CSharp]],
+        UnityEngine.CoreModule
+    - Name: m_PersistentCalls
+      Entry: 7
+      Data: 8|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
+    - Name: m_Calls
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[UnityEngine.Events.PersistentCall,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -528,7 +614,7 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 7
-      Data: 4|SceneEntranceData, Assembly-CSharp
+      Data: 10|SceneEntranceData, Assembly-CSharp
     - Name: _spawnPoint
       Entry: 10
       Data: 5
@@ -544,6 +630,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: OnUseEntrance
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -558,7 +647,7 @@ MonoBehaviour:
       Data: 6
     - Name: $v
       Entry: 7
-      Data: 5|SceneEntranceData, Assembly-CSharp
+      Data: 11|SceneEntranceData, Assembly-CSharp
     - Name: _spawnPoint
       Entry: 10
       Data: 7
@@ -574,6 +663,77 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: OnUseEntrance
+      Entry: 7
+      Data: 12|UnityEngine.Events.UnityEvent`1[[SceneEntranceData, Assembly-CSharp]],
+        UnityEngine.CoreModule
+    - Name: m_PersistentCalls
+      Entry: 7
+      Data: 13|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
+    - Name: m_Calls
+      Entry: 7
+      Data: 14|System.Collections.Generic.List`1[[UnityEngine.Events.PersistentCall,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 15|UnityEngine.Events.PersistentCall, UnityEngine.CoreModule
+    - Name: m_Target
+      Entry: 10
+      Data: 8
+    - Name: m_TargetAssemblyTypeName
+      Entry: 1
+      Data: CutsceneRunner, Assembly-CSharp
+    - Name: m_MethodName
+      Entry: 1
+      Data: RunCutscene
+    - Name: m_Mode
+      Entry: 3
+      Data: 1
+    - Name: m_Arguments
+      Entry: 7
+      Data: 16|UnityEngine.Events.ArgumentCache, UnityEngine.CoreModule
+    - Name: m_ObjectArgument
+      Entry: 10
+      Data: 9
+    - Name: m_ObjectArgumentAssemblyTypeName
+      Entry: 1
+      Data: UnityEngine.Object, UnityEngine
+    - Name: m_IntArgument
+      Entry: 3
+      Data: 0
+    - Name: m_FloatArgument
+      Entry: 4
+      Data: 0
+    - Name: m_StringArgument
+      Entry: 1
+      Data: 
+    - Name: m_BoolArgument
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: m_CallState
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -585,13 +745,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 10
-      Data: 8
+      Data: 10
     - Name: $v
       Entry: 7
-      Data: 6|SceneEntranceData, Assembly-CSharp
+      Data: 17|SceneEntranceData, Assembly-CSharp
     - Name: _spawnPoint
       Entry: 10
-      Data: 9
+      Data: 11
     - Name: _playerSpawnDirection
       Entry: 7
       Data: UnityEngine.Vector2, UnityEngine.CoreModule
@@ -601,6 +761,32 @@ MonoBehaviour:
     - Name: 
       Entry: 4
       Data: -1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: OnUseEntrance
+      Entry: 7
+      Data: 18|UnityEngine.Events.UnityEvent`1[[SceneEntranceData, Assembly-CSharp]],
+        UnityEngine.CoreModule
+    - Name: m_PersistentCalls
+      Entry: 7
+      Data: 19|UnityEngine.Events.PersistentCallGroup, UnityEngine.CoreModule
+    - Name: m_Calls
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[UnityEngine.Events.PersistentCall,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -619,6 +805,9 @@ MonoBehaviour:
   _defaultEntranceData:
     _spawnPoint: {fileID: 882840314}
     _playerSpawnDirection: {x: 0, y: 1}
+    OnUseEntrance:
+      m_PersistentCalls:
+        m_Calls: []
   _playerAnimator: {fileID: 871526369}
 --- !u!114 &414983642
 MonoBehaviour:
@@ -843,60 +1032,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &711189280
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 711189282}
-  - component: {fileID: 711189281}
-  m_Layer: 0
-  m_Name: CutsceneRunner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &711189281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711189280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c0dc9286081e674c84613278fa13669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actions:
-  - rid: 6796575472757768200
-  onStart: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 6796575472757768200
-      type: {class: ChangeGameState, ns: , asm: Assembly-CSharp}
-      data:
-        _newState: 1
---- !u!4 &711189282
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711189280}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &871526369 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2918674921502543992, guid: a45ea6e4836a349449394da0cffb364a, type: 3}
@@ -1207,6 +1342,229 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1173190470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1173190471}
+  - component: {fileID: 1173190472}
+  - component: {fileID: 1173190473}
+  - component: {fileID: 1173190474}
+  - component: {fileID: 1173190475}
+  - component: {fileID: 1173190477}
+  - component: {fileID: 1173190476}
+  m_Layer: 0
+  m_Name: Old Man
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1173190471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173190470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23, y: -73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 280008484}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1173190472
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173190470}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 36b7e68740be1834daa5dc5764c60f16, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 32, y: 40}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1173190473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173190470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e7182e679eee041b1aafeb2e105392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _layer: {fileID: 11400000, guid: dc5a878700ea52e4bbbbc5750539e3f2, type: 2}
+  _debugColor: {r: 0, g: 1, b: 0, a: 1}
+  _interactable:
+    _object: {fileID: 1173190475}
+  _rect:
+    serializedVersion: 2
+    x: 0
+    y: -11
+    width: 22
+    height: 4
+--- !u!114 &1173190474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173190470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0dc9286081e674c84613278fa13669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions:
+  - rid: 4357923584690356226
+  - rid: 6796575472757768192
+  - rid: 6796575472757768193
+  - rid: 4357923584690356227
+  onStart: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 4357923584690356226
+      type: {class: ChangeGameState, ns: , asm: Assembly-CSharp}
+      data:
+        _newState: 2
+    - rid: 4357923584690356227
+      type: {class: ChangeGameState, ns: , asm: Assembly-CSharp}
+      data:
+        _newState: 1
+    - rid: 6796575472757768192
+      type: {class: PlayDialogueAction, ns: , asm: Assembly-CSharp}
+      data:
+        _dialogue: {fileID: 11400000, guid: 25fe1de582b64d440b275cb739323ed5, type: 2}
+    - rid: 6796575472757768193
+      type: {class: PlayDialogueAction, ns: , asm: Assembly-CSharp}
+      data:
+        _dialogue: {fileID: 11400000, guid: d29e5b8022af46e49a4247dd7765b668, type: 2}
+--- !u!114 &1173190475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173190470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fdc3994517d024bb46ba2bb4768070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1173190474}
+        m_TargetAssemblyTypeName: CutsceneRunner, Assembly-CSharp
+        m_MethodName: RunCutscene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1173190477}
+        m_TargetAssemblyTypeName: FaceDirection, Assembly-CSharp
+        m_MethodName: FaceObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1978381832}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &1173190476
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173190470}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: f162b87ca66016e4796568485b2b3831, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1173190477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173190470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b0a3bb74bbd5b4e896270da0bf6ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1173190476}
+  _spriteRenderer: {fileID: 1173190472}
+  _mirror: 1
+  _initialDirection: {x: 0, y: -1}
 --- !u!1 &1225548844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,12 +1576,12 @@ GameObject:
   - component: {fileID: 1225548845}
   - component: {fileID: 1225548846}
   m_Layer: 0
-  m_Name: Test Cutscene
+  m_Name: Prologue Cutscene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1225548845
 Transform:
   m_ObjectHideFlags: 0
@@ -1252,13 +1610,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
+  - rid: 4357923584690356225
   - rid: 6796575472757768192
   - rid: 6796575472757768193
   - rid: 6796575472757768194
-  onStart: 1
+  - rid: 4357923584690356224
+  onStart: 0
   references:
     version: 2
     RefIds:
+    - rid: 4357923584690356224
+      type: {class: ChangeGameState, ns: , asm: Assembly-CSharp}
+      data:
+        _newState: 1
+    - rid: 4357923584690356225
+      type: {class: ChangeGameState, ns: , asm: Assembly-CSharp}
+      data:
+        _newState: 2
     - rid: 6796575472757768192
       type: {class: PlayDialogueAction, ns: , asm: Assembly-CSharp}
       data:

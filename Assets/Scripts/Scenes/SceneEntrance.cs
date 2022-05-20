@@ -31,5 +31,7 @@ public class SceneEntrance : SerializedMonoBehaviour
         _playerAnimator.transform.position = entranceData.SpawnPoint.position;
 
         _playerAnimator.SetDirection(entranceData.PlayerSpawnDirection);
+
+        entranceData.OnUseEntrance?.Invoke(entranceData);
     }
 }

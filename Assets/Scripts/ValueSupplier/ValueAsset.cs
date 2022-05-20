@@ -13,27 +13,35 @@ public class ValueAsset<T> : ScriptableObject, IValueSupplier<T>
     [SerializeField, DisableInEditorMode]
     T _value;
 
-    // [SerializeField]
-    // [AssetSearch]
-    // EventAsset<T> _event;
+    [ShowInInspector, ReadOnly]
+    public T PreviousValue {get; private set;}
+
+    [SerializeField]
+    [AssetSearch]
+    EventAsset<T> _onValueChanged;
 
     public T Value 
     {
         get => _value;
         set 
         {
+            PreviousValue = this._value;
             this._value = value;
-            // _event?.Invoke(_value);
+
+            if (_onValueChanged is not null)
+                _onValueChanged.Invoke(value);
         }
     }
 
     void OnEnable()
     {
-        _value = _initialValue;    
+        _value = _initialValue;
+        PreviousValue = _initialValue; 
     }
 
     public void Reset()
     {
         _value = _initialValue;
+        PreviousValue = _initialValue;
     }
 }

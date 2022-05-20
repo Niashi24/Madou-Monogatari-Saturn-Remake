@@ -18,3 +18,8 @@ MonoBehaviour:
     value: 0
     reference:
       _object: {fileID: 11400000, guid: 5c6542c8dfd3d6a4694b6972775e05ad, type: 2}
+  _loading:
+    useReference: 1
+    value: 0
+    reference:
+      _object: {fileID: 11400000, guid: 3f54c2ca165abce4e9c1343c1cfa2780, type: 2}

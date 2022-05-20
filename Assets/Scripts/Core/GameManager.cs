@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine.SceneManagement;
+using UnitySceneManagement = UnityEngine.SceneManagement.SceneManager;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,7 +21,10 @@ public class GameManager : MonoBehaviour
         else
             Destroy(gameObject);
             
-        
+        if (UnitySceneManagement.GetActiveScene().buildIndex == 0)
+            ChangeState(GameState.Title);
+        else
+            ChangeState(GameState.Overworld);
     }
 
     void OnDisable() {
@@ -32,6 +37,8 @@ public class GameManager : MonoBehaviour
     [Button]
     public void ChangeState(GameState newState)
     {
+        // Debug.Log($"State changed from {State} to {newState}");
+
         State = newState;
 
         // switch (State)
