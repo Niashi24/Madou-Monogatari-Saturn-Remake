@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d99c717708ff2a438adc74b028702ed, type: 3}
+  m_Name: village_lady_2_1
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 89c183f0deedae946a11539f54c66b1e, type: 2}
+    - {fileID: 11400000, guid: f8df5075cbf534e469aff24b43f38418, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: text
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[LanguageKey, Assembly-CSharp],[TextPiece,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[LanguageKey, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 2|TextPiece, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: "\u4E16\u754C\u306E\u547D\u904B\u306F \u3059\u30D9\u3066        \r\n\u3042\u306A\u305F\u306B
+        \u3086\u3060\u306D\u3089\u308C\u307E\u3057\u305F\u2026    \r\n                  "
+    - Name: isJapanese
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 3|TextPiece, Assembly-CSharp
+    - Name: text
+      Entry: 1
+      Data: 'The fate of the world has been placed
+
+        entirely in your hands.'
+    - Name: isJapanese
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _leftPortrait:
+    Icon: {fileID: -163873693, guid: e3544301f746dab438a01143fbe60704, type: 3}
+    IsSpeaking: 0
+  _middlePortrait:
+    Icon: {fileID: -163873693, guid: e3544301f746dab438a01143fbe60704, type: 3}
+    IsSpeaking: 0
+  _rightPortrait:
+    Icon: {fileID: -163873693, guid: e3544301f746dab438a01143fbe60704, type: 3}
+    IsSpeaking: 0

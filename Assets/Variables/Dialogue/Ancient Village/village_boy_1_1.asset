@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d99c717708ff2a438adc74b028702ed, type: 3}
-  m_Name: dlg_village_elder_1_2
+  m_Name: village_boy_1_1
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -48,9 +48,8 @@ MonoBehaviour:
       Data: 2|TextPiece, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "\u300C\u5927\u5C01\u5370\u5854\u300D\u306B\u5C01\u3058\u3053\u3081\u305F\u4ECA\u306A\u3089\u3070 
-        \r\n\u30E4\u30C4\u3082 \u6B21\u5143\u79FB\u52D5\u306F\u4E0D\u53EF\u80FD\u306A\u306F\u305A\uFF01 
-        \r\n                  "
+      Data: "\u304A\u306B\u3044\u3061\u3083\u3093 \u30AC\u30F3\u30D0\u30EC\u30FC\u30C3\uFF01   
+        \r\n                  \r\n                  "
     - Name: isJapanese
       Entry: 5
       Data: true
@@ -71,8 +70,7 @@ MonoBehaviour:
       Data: 3|TextPiece, Assembly-CSharp
     - Name: text
       Entry: 1
-      Data: "With him now trapped in the\u300CGrand\nSealing Tower\u300D, it should
-        be impossible\nfor him to move between dimensions!"
+      Data: Good luck, mister!
     - Name: isJapanese
       Entry: 5
       Data: false

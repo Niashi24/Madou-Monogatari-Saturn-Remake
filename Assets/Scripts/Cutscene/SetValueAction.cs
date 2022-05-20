@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using LS.Utilities;
 
-public class SetValue<T> : CutsceneAction
+public class SetValueAction<T> : CutsceneAction
 {
     [SerializeField]
     ObjectReference<IValueSupplier<T>> _valueReference;

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9767e74e55ec9c24c944de6a7d1b5014, type: 3}
-  m_Name: Test Script
+  m_Script: {fileID: 11500000, guid: 12613ae574e03864e876d881de984c4b, type: 3}
+  m_Name: Talked to Lady
   m_EditorClassIdentifier: 
-  _script:
-  - {fileID: 11400000, guid: c53449651dd5e6447884c1286603d46b, type: 2}
-  - {fileID: 11400000, guid: cc0ad4499ee45664e957467a88e5649b, type: 2}
+  _initialValue: 0
+  _value: 0
+  _onValueChanged: {fileID: 0}
