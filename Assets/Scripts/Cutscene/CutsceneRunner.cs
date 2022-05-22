@@ -29,13 +29,10 @@ public class CutsceneRunner : MonoBehaviour
         currentCutscene = StartCoroutine(RunCutsceneCoroutine());
     }
 
+    [Button]
     public void StopCutscene()
     {
-        if (currentCutscene != null)
-        {
-            StopCoroutine(currentCutscene);
-            currentCutscene = null;
-        }
+        StopAllCoroutines();
     }
 
     IEnumerator RunCutsceneCoroutine()

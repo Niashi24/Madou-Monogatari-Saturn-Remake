@@ -162,15 +162,13 @@ MonoBehaviour:
       Interact: 0
       Moving: 0
     reference:
-      _object: {fileID: 6724507515102030534}
+      _object: {fileID: 11400000, guid: 8e729b9d3b2a4404181eb1af2659b992, type: 2}
   _pixelsPerFrame:
     useReference: 0
     value: 2
     reference:
       _object: {fileID: 0}
   _collider: {fileID: 2918674921502543997}
-  _obstacles: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
-  _interactables: {fileID: 11400000, guid: dc5a878700ea52e4bbbbc5750539e3f2, type: 2}
 --- !u!114 &2918674921502543994
 MonoBehaviour:
   m_ObjectHideFlags: 0
