@@ -35,8 +35,8 @@ public class AudioManager : MonoSingleton<AudioManager>
         if (_bgmSource.timeSamples > currentBGM.LoopEndSamples)
         {
             _bgmSource.timeSamples -= currentBGM.LoopLength;
-            Debug.Log("looped");
-        }
+            // Debug.Log("looped");
+        } 
     }
 
     public void PlayBGM(AudioData bgm)

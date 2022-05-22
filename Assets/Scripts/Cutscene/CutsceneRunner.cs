@@ -13,6 +13,7 @@ public class CutsceneRunner : MonoBehaviour
 
     Coroutine currentCutscene;
 
+    [ShowInInspector, ReadOnly]
     public CutsceneAction CurrentAction {get; private set;}
 
     void Start() {

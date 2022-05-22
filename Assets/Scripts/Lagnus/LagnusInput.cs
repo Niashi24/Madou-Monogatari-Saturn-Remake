@@ -27,10 +27,10 @@ public struct LagnusInput
         }
         set
         {
-            Left = value.x == -1;
-            Right = value.x == 1;
-            Up = value.y == 1;
-            Down = value.y == -1;
+            Left = value.x < 0;
+            Right = value.x > 0;
+            Up = value.y > 0;
+            Down = value.y < 0;
         }
     }
 }
