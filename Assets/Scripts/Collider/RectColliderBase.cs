@@ -18,6 +18,8 @@ public abstract class RectColliderBase : MonoBehaviour
     public IInteractable Interactable => _interactable.HasValue ? _interactable.Value : new NullInteractable(this);
 
     void OnDrawGizmos() {
+        if (!isActiveAndEnabled) return;
+        
         if (_layer is null)
             DebugDrawRect(this, _debugColor);
         else
