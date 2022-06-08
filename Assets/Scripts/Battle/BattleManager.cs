@@ -22,7 +22,7 @@ public class BattleManager : MonoSingleton<BattleManager>
     public void StartBattle(BattleParty allies, BattleParty enemies)
     {
         GameManager.I.ChangeState(GameState.Battle);
-
+        
     }
 
     
