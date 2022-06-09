@@ -1,0 +1,240 @@
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 286, ya = 126, xb = 87, yb = 23
+Texture address = 00023420
+Texture width = 88, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 335, ya = 150, xb = 23, yb = 39
+Texture address = 00024A80
+Texture width = 24, height = 40
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 331, ya = 172, xb = 23, yb = 63
+Texture address = 00027240
+Texture width = 24, height = 64
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 304, ya = 149, xb = 23, yb = 31
+Texture address = 00023FA0
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 299, ya = 171, xb = 23, yb = 55
+Texture address = 00026FA0
+Texture width = 24, height = 56
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 313, ya = 155, xb = 31, yb = 39
+Texture address = 00022CA0
+Texture width = 32, height = 40
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 307, ya = 108, xb = 39, yb = 23
+Texture address = 00022580
+Texture width = 40, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 339, ya = 150, xb = 23, yb = 31
+Texture address = 000230A0
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 332, ya = 150, xb = 23, yb = 31
+Texture address = 00022F20
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 307, ya = 131, xb = 31, yb = 23
+Texture address = 000229E0
+Texture width = 32, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 313, ya = 120, xb = 39, yb = 31
+Texture address = 00022760
+Texture width = 40, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 308, ya = 144, xb = 39, yb = 15
+Texture address = 00022B60
+Texture width = 40, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 315, ya = 179, xb = 31, yb = 55
+Texture address = 000262E0
+Texture width = 32, height = 56
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 327, ya = 203, xb = 15, yb = 7
+Texture address = 00026DE0
+Texture width = 16, height = 8
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 320, ya = 150, xb = 23, yb = 31
+Texture address = 00024500
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 362, ya = 132, xb = 39, yb = 23
+Texture address = 00027DC0
+Texture width = 40, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 347, ya = 150, xb = 23, yb = 39
+Texture address = 00025140
+Texture width = 24, height = 40
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 325, ya = 116, xb = 23, yb = 23
+Texture address = 00023C60
+Texture width = 24, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 327, ya = 124, xb = 15, yb = 15
+Texture address = 00023F20
+Texture width = 16, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 297, ya = 134, xb = 87, yb = 23
+Texture address = 00023840
+Texture width = 88, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace

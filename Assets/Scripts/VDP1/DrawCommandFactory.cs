@@ -9,10 +9,8 @@ namespace LS.VDP1.Commands.Editor
     [CreateAssetMenu(menuName = "VDP1/DrawCommandFactory")]
     public class DrawCommandFactory : ScriptableObject
     {
-        [SerializeField]
-        UnityEngine.UI.Text text;
 
-        readonly List<DrawCommandWorker> Workers = new()
+        static readonly List<DrawCommandWorker> Workers = new()
         {
             new SystemClippingCommandWorker(),
             new UserClippingCommandWorker(),
@@ -20,25 +18,23 @@ namespace LS.VDP1.Commands.Editor
         };
 
         [Button]
-        public List<DrawCommand> GetCommandsFromDebug(TextAsset asset)
+        public static List<DrawCommand> GetCommandsFromDebug(TextAsset asset)
         {
             List<DrawCommand> output = new();
             string[] info = asset.text.Split("\r\n");
-
-            // text.text = asset.text;
 
             var indexes = GetBeginsAndEnds(info);
 
             foreach (var (begin, end) in indexes)
             {
-                Debug.Log($"Begin: {begin}, End: {end}");
+                // Debug.Log($"Begin: {begin}, End: {end}");
                 output.Add(GetCommand(info, begin, end));
             }
 
             return output;
         }
 
-        List<(int, int)> GetBeginsAndEnds(string[] info)
+        public static List<(int, int)> GetBeginsAndEnds(string[] info)
         {
             List<(int, int)> output = new();
 
@@ -62,7 +58,7 @@ namespace LS.VDP1.Commands.Editor
             return output;
         }
 
-        int FindNextBeginPoint(string[] info, int start)
+        public static int FindNextBeginPoint(string[] info, int start)
         {
             for (int i = start; i < info.Length; i++)
             {
@@ -72,7 +68,7 @@ namespace LS.VDP1.Commands.Editor
             return -1;
         }
 
-        public DrawCommand GetCommand(string[] info, int begin, int end)
+        public static DrawCommand GetCommand(string[] info, int begin, int end)
         {
             string title = info[begin];
             foreach (var worker in Workers)

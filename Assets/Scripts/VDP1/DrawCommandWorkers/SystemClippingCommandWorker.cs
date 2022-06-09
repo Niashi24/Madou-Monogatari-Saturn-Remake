@@ -24,7 +24,7 @@ namespace LS.VDP1.Commands.Editor
             for (int i = 0; i < infoSplit.Length; i++)
                 values[i] = int.Parse(infoSplit[i]);
 
-            Debug.Log(infoString);
+            // Debug.Log(infoString);
 
             return new SystemClippingCommand()
             {

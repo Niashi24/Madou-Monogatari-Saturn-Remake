@@ -39,11 +39,11 @@ namespace LS.VDP1.Commands.Editor
             int width = int.Parse(textDimSplit[0]);
             int height = int.Parse(textDimSplit[1]);
 
-            string textureDirection = info[begin + 5]
-                .Replace("Texture read direction: ", "");
+            // string textureDirection = info[begin + 5]
+            //     .Replace("Texture read direction: ", "");
 
             TextureReadDirection dir = TextureReadDirection.Unknown;
-            if (textureDimensions.Contains("Normal"))
+            if (fullText.Contains("Texture read direction: Normal"))
                 dir = TextureReadDirection.Normal;
 
             bool preClipEnabled = false;
