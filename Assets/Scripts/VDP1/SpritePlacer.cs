@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using LS.VDP1.Commands;
@@ -7,6 +6,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Pool;
 
+[SelectionBase]
 public class SpritePlacer : SerializedMonoBehaviour
 {
     [SerializeField]
@@ -14,13 +14,19 @@ public class SpritePlacer : SerializedMonoBehaviour
 
     [SerializeField]
     Dictionary<string, SpriteRenderer> currentSpritesDictionary = new();
+
+    [SerializeField]
+    [OnValueChanged(nameof(PlaceSprites))]
+    Vector3 _offset;
     
     [SerializeField]
+    [OnValueChanged(nameof(PlaceSprites))]
     TextAsset _text;
 
     [Button]
     public void PlaceSprites()
     {
+        if (_text is null) return;
         var commands = DrawCommandFactory.GetCommandsFromDebug(_text);
 
         foreach (var renderer in currentSpritesDictionary.Values)
@@ -43,20 +49,21 @@ public class SpritePlacer : SerializedMonoBehaviour
 
     void PlaceSprite(SpriteRenderer renderer, ScaledSpriteCommand scaledSprite, int num)
     {
-        renderer.transform.position = new Vector3(scaledSprite.xa, -scaledSprite.ya);
+        renderer.transform.localPosition = new Vector3(scaledSprite.xa, -scaledSprite.ya) + _offset;
         renderer.flipX = scaledSprite.textureReadDirection != TextureReadDirection.Normal;
         renderer.sortingOrder = num;
         renderer.gameObject.SetActive(true);
-        // throw new NotImplementedException();
     }
 
     SpriteRenderer GetSprite(string textureAddress)
     {
         if (currentSpritesDictionary.ContainsKey(textureAddress))
             return currentSpritesDictionary[textureAddress];
-        //not loaded
+
+        //doesn't already have a sprite loaded
         if (_dict.addressSpriteDictionary.ContainsKey(textureAddress))
         {
+            //create new renderer
             var gameObj = new GameObject(textureAddress);
             gameObj.transform.parent = transform;
             var renderer = gameObj.AddComponent<SpriteRenderer>();

@@ -1,6 +1,19 @@
 
 Scaled Sprite
 Zoom Point: Center-center
+xa = 32, ya = 200, xb = 54, yb = 15
+Texture address = 0007D400
+Texture width = 32, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Mesh Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color bank)
+Color bank: 00000000
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
 xa = 331, ya = 172, xb = 23, yb = 63
 Texture address = 00027240
 Texture width = 24, height = 64

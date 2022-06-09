@@ -12,7 +12,7 @@ public class TransformGetPosition : MonoBehaviour, IValueSupplier<Vector3>
 
     public Vector3 Value
     {
-        get => _transform.Value.position + _offset.Value;
+        get => _transform.Value is not null ? _transform.Value.position + _offset.Value : _offset.Value;
         set{}
     }
 }

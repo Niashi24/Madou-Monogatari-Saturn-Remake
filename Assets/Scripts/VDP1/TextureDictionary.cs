@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
@@ -21,4 +22,20 @@ public class TextureDictionary : SerializedScriptableObject
         foreach (var newSprite in newSprites)
             AddSpriteUsingName(newSprite);
     }
+
+    #if UNITY_EDITOR
+    [Button]
+    void FindAndLoadAllTextures()
+    {
+        var images = UnityEditor.AssetDatabase.FindAssets("t:Sprite 000");
+
+        foreach (var imgGUID in images)
+        {
+            var imgPath = UnityEditor.AssetDatabase.GUIDToAssetPath(imgGUID);
+            var sprite = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>(imgPath);
+            
+            AddSpriteUsingName(sprite);
+        }
+    }
+    #endif
 }
