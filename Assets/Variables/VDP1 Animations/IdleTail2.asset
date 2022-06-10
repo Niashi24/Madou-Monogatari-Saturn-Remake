@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a2eaa597e925946aa75b5f249c1857, type: 3}
+  m_Name: IdleTail2
+  m_EditorClassIdentifier: 
+  spriteEntries:
+  - textureAddress: 000242A0
+    position: {x: 144, y: 181}
+    reversed: 0
+  - textureAddress: 00023420
+    position: {x: 120, y: 142}
+    reversed: 0
+  - textureAddress: 00024120
+    position: {x: 148, y: 173}
+    reversed: 0
+  - textureAddress: 00024C60
+    position: {x: 176, y: 169}
+    reversed: 0
+  - textureAddress: 00023FA0
+    position: {x: 149, y: 163}
+    reversed: 0
+  - textureAddress: 00024A80
+    position: {x: 179, y: 165}
+    reversed: 0
+  - textureAddress: 00024DE0
+    position: {x: 176, y: 177}
+    reversed: 0
+  - textureAddress: 00022CA0
+    position: {x: 158, y: 169}
+    reversed: 0
+  - textureAddress: 00022580
+    position: {x: 152, y: 122}
+    reversed: 0
+  - textureAddress: 000230A0
+    position: {x: 184, y: 164}
+    reversed: 0
+  - textureAddress: 00022F20
+    position: {x: 177, y: 164}
+    reversed: 0
+  - textureAddress: 000229E0
+    position: {x: 152, y: 145}
+    reversed: 0
+  - textureAddress: 00022760
+    position: {x: 158, y: 134}
+    reversed: 0
+  - textureAddress: 00024800
+    position: {x: 156, y: 185}
+    reversed: 0
+  - textureAddress: 00022B60
+    position: {x: 153, y: 157}
+    reversed: 0
+  - textureAddress: 00024680
+    position: {x: 160, y: 173}
+    reversed: 0
+  - textureAddress: 00024500
+    position: {x: 165, y: 164}
+    reversed: 0
+  - textureAddress: 00023C60
+    position: {x: 168, y: 130}
+    reversed: 0
+  - textureAddress: 00023F20
+    position: {x: 172, y: 138}
+    reversed: 0
+  - textureAddress: 00023840
+    position: {x: 140, y: 146}
+    reversed: 0
+  - textureAddress: 00024440
+    position: {x: 148, y: 205}
+    reversed: 0
+  - textureAddress: 00024320
+    position: {x: 148, y: 193}
+    reversed: 0
+  - textureAddress: 000249C0
+    position: {x: 160, y: 213}
+    reversed: 0
+  - textureAddress: 00024840
+    position: {x: 160, y: 197}
+    reversed: 0
+  - textureAddress: 000254A0
+    position: {x: 187, y: 181}
+    reversed: 0
+  - textureAddress: 00025020
+    position: {x: 176, y: 205}
+    reversed: 0
+  - textureAddress: 00024EA0
+    position: {x: 176, y: 193}
+    reversed: 0
+  - textureAddress: 000278C0
+    position: {x: 204, y: 161}
+    reversed: 0
+  - textureAddress: 00025320
+    position: {x: 187, y: 173}
+    reversed: 0
+  - textureAddress: 00025760
+    position: {x: 196, y: 209}
+    reversed: 0
+  - textureAddress: 00025560
+    position: {x: 191, y: 197}
+    reversed: 0
+  - textureAddress: 00025140
+    position: {x: 191, y: 165}
+    reversed: 0

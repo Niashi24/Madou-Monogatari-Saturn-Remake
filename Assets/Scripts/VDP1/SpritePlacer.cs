@@ -21,36 +21,33 @@ public class SpritePlacer : SerializedMonoBehaviour
     
     [SerializeField]
     [OnValueChanged(nameof(PlaceSprites))]
-    TextAsset _text;
+    VDP1Frame _frame;
 
     [Button]
     public void PlaceSprites()
     {
-        if (_text is null) return;
-        var commands = DrawCommandFactory.GetCommandsFromDebug(_text);
+        if (_frame is null) return;
 
         foreach (var renderer in currentSpritesDictionary.Values)
         {
             renderer.gameObject.SetActive(false);
         }
 
-        for (int i = 0; i < commands.Count; i++)
+        for (int i = 0; i < _frame.SpriteEntries.Count; i++)
         {
-            if (commands[i] is ScaledSpriteCommand scaledSprite)
+            var entry = _frame.SpriteEntries[i];
+            var sprite = GetSprite(entry.textureAddress);
+            if (sprite is not null)
             {
-                var sprite = GetSprite(scaledSprite.textureAddress);
-                if (sprite is not null)
-                {
-                    PlaceSprite(sprite, scaledSprite, i);
-                }
+                PlaceSprite(sprite, entry.position, entry.reversed, i);
             }
         }
     }
 
-    void PlaceSprite(SpriteRenderer renderer, ScaledSpriteCommand scaledSprite, int num)
+    void PlaceSprite(SpriteRenderer renderer, Vector2Int position, bool reversed, int num)
     {
-        renderer.transform.localPosition = new Vector3(scaledSprite.xa, -scaledSprite.ya) + _offset;
-        renderer.flipX = scaledSprite.textureReadDirection != TextureReadDirection.Normal;
+        renderer.transform.localPosition = new Vector3(position.x, -position.y) + _offset;
+        renderer.flipX = reversed;
         renderer.sortingOrder = num;
         renderer.gameObject.SetActive(true);
     }
