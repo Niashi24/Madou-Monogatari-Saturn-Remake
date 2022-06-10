@@ -16,15 +16,21 @@ public class SpritePlacer : SerializedMonoBehaviour
     Dictionary<string, SpriteRenderer> currentSpritesDictionary = new();
 
     [SerializeField]
-    [OnValueChanged(nameof(PlaceSprites))]
+    [OnValueChanged(nameof(PlaceCurrentFrame))]
     Vector3 _offset;
     
     [SerializeField]
-    [OnValueChanged(nameof(PlaceSprites))]
+    [OnValueChanged(nameof(PlaceCurrentFrame))]
     VDP1Frame _frame;
 
+    public void PlaceFrame(VDP1Frame frame)
+    {
+        _frame = frame;
+        PlaceCurrentFrame();
+    }
+
     [Button]
-    public void PlaceSprites()
+    public void PlaceCurrentFrame()
     {
         if (_frame is null) return;
 

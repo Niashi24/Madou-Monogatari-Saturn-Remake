@@ -103,6 +103,9 @@ MonoBehaviour:
   - textureAddress: 00025560
     position: {x: 191, y: 197}
     reversed: 0
+  - textureAddress: 00023220
+    position: {x: 200, y: 164}
+    reversed: 0
   - textureAddress: 00025140
     position: {x: 191, y: 165}
     reversed: 0
