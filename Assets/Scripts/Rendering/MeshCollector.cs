@@ -72,6 +72,7 @@ public class MeshCollector : MonoBehaviour
             Debug.LogError("Must be 4 vertices (quad).");
             return default;
         }
+        
         float x = 0, y = 0;
 
         if (vertices[0].x == vertices[2].x && vertices[1].x == vertices[3].x)
@@ -83,31 +84,29 @@ public class MeshCollector : MonoBehaviour
         else if (vertices[0].x == vertices[2].x)
         {
             x = vertices[0].x;
-            float m1 = slope(vertices[3], vertices[1]);
-            float b1 = vertices[1].y - m1 * vertices[1].x;
+            var (m1, b1) = slopeintercept(vertices[3], vertices[1]);
             y = m1*x + b1;
         } 
         else if (vertices[1].x == vertices[3].x)
         {
             x = vertices[1].x;
-            float m0 = slope(vertices[2], vertices[0]);
-            float b0 = vertices[0].y - m0 * vertices[0].x;
+            var (m0, b0) = slopeintercept(vertices[2], vertices[0]);
             y = m0 * x + b0;
         }
         else
         {
-            float m1 = slope(vertices[3], vertices[1]);
-            float b1 = vertices[1].y - m1 * vertices[1].x;
-            float m0 = slope(vertices[2], vertices[0]);
-            float b0 = vertices[0].y - m0 * vertices[0].x;
+            var (m1, b1) = slopeintercept(vertices[3], vertices[1]);
+            var (m0, b0) = slopeintercept(vertices[2], vertices[0]);
 
             x = (b1 - b0)/(m0-m1);
             y = m0 * x + b0;
         }
 
-        static float slope(Vector2 a, Vector2 b)
+        static (float, float) slopeintercept(Vector2 p1, Vector2 p2)
         {
-            return (b.y - a.y)/(b.x - a.x);
+            float m = (p2.y - p1.y)/(p2.x - p1.x);
+            float b = p1.y - m * p1.x;
+            return (m,b);
         }
 
         return new Vector2(x,y);
