@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class DistortedSpriteEntry : SpriteEntry
 {
-    public Vector2[] vertices;
+    public Vector3[] vertices;
 }

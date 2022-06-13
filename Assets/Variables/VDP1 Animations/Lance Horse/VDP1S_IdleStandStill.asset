@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: VDP1S_IdleStandStill
   m_EditorClassIdentifier: 
   _frames:
-  - {fileID: 11400000, guid: 23cf0fb8c99da4648b4c8e18bf403838, type: 2}
+  - frame: {fileID: 11400000, guid: 23cf0fb8c99da4648b4c8e18bf403838, type: 2}
+    framesToPlay: 1

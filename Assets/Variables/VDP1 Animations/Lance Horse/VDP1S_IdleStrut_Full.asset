@@ -13,17 +13,31 @@ MonoBehaviour:
   m_Name: VDP1S_IdleStrut_Full
   m_EditorClassIdentifier: 
   _frames:
-  - {fileID: 11400000, guid: 0caecfc1134e86340a243b7748dc0d98, type: 2}
-  - {fileID: 11400000, guid: a1a524a4f85e9a540a404de682dd9ee4, type: 2}
-  - {fileID: 11400000, guid: 656497ecdbff78f48b13b23f8d0c9787, type: 2}
-  - {fileID: 11400000, guid: 80fc6d7e2e80e96439e3e4e8abf06670, type: 2}
-  - {fileID: 11400000, guid: f7d09049b24aa8c408dfb624345434aa, type: 2}
-  - {fileID: 11400000, guid: 17390b89f5ae5b749bddf65537d3af16, type: 2}
-  - {fileID: 11400000, guid: 5226d35260003504987e4509ae03bfb1, type: 2}
-  - {fileID: 11400000, guid: 0caecfc1134e86340a243b7748dc0d98, type: 2}
-  - {fileID: 11400000, guid: a1a524a4f85e9a540a404de682dd9ee4, type: 2}
-  - {fileID: 11400000, guid: 656497ecdbff78f48b13b23f8d0c9787, type: 2}
-  - {fileID: 11400000, guid: 80fc6d7e2e80e96439e3e4e8abf06670, type: 2}
-  - {fileID: 11400000, guid: f7d09049b24aa8c408dfb624345434aa, type: 2}
-  - {fileID: 11400000, guid: 17390b89f5ae5b749bddf65537d3af16, type: 2}
-  - {fileID: 11400000, guid: 5226d35260003504987e4509ae03bfb1, type: 2}
+  - frame: {fileID: 11400000, guid: 0caecfc1134e86340a243b7748dc0d98, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a1a524a4f85e9a540a404de682dd9ee4, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 656497ecdbff78f48b13b23f8d0c9787, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 80fc6d7e2e80e96439e3e4e8abf06670, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: f7d09049b24aa8c408dfb624345434aa, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 17390b89f5ae5b749bddf65537d3af16, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 5226d35260003504987e4509ae03bfb1, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 0caecfc1134e86340a243b7748dc0d98, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a1a524a4f85e9a540a404de682dd9ee4, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 656497ecdbff78f48b13b23f8d0c9787, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 80fc6d7e2e80e96439e3e4e8abf06670, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: f7d09049b24aa8c408dfb624345434aa, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 17390b89f5ae5b749bddf65537d3af16, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 5226d35260003504987e4509ae03bfb1, type: 2}
+    framesToPlay: 1

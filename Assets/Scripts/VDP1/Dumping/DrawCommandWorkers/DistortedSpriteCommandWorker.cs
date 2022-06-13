@@ -13,7 +13,7 @@ namespace LS.VDP1.Commands.Editor
 
         public override DrawCommand ParseCommand(string[] info, int begin, int end)
         {
-            Vector2[] vertices = new Vector2[4];
+            Vector3[] vertices = new Vector3[4];
             string coord12 = info[begin + 1]
                 .Replace("x1 = ", "")
                 .Replace(", y1 = ", " ")
@@ -30,7 +30,8 @@ namespace LS.VDP1.Commands.Editor
 
             for (int i = 0; i < coordsSplit.Length; i+=2)
             {
-                vertices[i/2] = new Vector2(int.Parse(coordsSplit[i]), int.Parse(coordsSplit[i+1]));
+                //notice: -y
+                vertices[i/2] = new Vector3(int.Parse(coordsSplit[i]), -int.Parse(coordsSplit[i+1]), 0);
             }
             
             string textureAddress = info[begin + 3]

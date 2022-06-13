@@ -9,12 +9,22 @@ using UnityEngine.Pool;
 [SelectionBase]
 public class SpritePlacer : SerializedMonoBehaviour
 {
+    //each sprite is placed further in the back than the previous by this amount
+    const float zGap = 0.01f;
+
     [SerializeField]
     TextureDictionary _dict;
 
     ObjectPool<SpriteRenderer> spritePool;
 
+    [SerializeField]
+    [Required]
+    MeshCollector _meshCollectorPrefab;
+
+    ObjectPool<MeshCollector> meshPool;
+
     List<SpriteRenderer> activeSprites = new();
+    List<MeshCollector> activeMeshes = new();
 
     [SerializeField]
     Vector3 _offset;
@@ -25,7 +35,7 @@ public class SpritePlacer : SerializedMonoBehaviour
     void Start() {
         spritePool = new ObjectPool<SpriteRenderer>(
             () => {
-                var gameObj = new GameObject("Sprite");
+                var gameObj = new GameObject("Scaled Sprite");
                 gameObj.transform.parent = transform;
                 gameObj.SetActive(false);
                 return gameObj.AddComponent<SpriteRenderer>();
@@ -33,7 +43,25 @@ public class SpritePlacer : SerializedMonoBehaviour
             (x) => x.gameObject.SetActive(true),
             (x) => x.gameObject.SetActive(false),
             (x) => Destroy(x.gameObject)
-        );    
+        );
+
+        meshPool = new ObjectPool<MeshCollector>(
+            () => {
+                var meshCollector = Instantiate(
+                    _meshCollectorPrefab,
+                    Vector3.zero,
+                    Quaternion.identity,
+                    transform
+                );
+
+                meshCollector.name = "Distorted Sprite";
+
+                return meshCollector;
+            },
+            (x) => x.gameObject.SetActive(true),
+            (x) => x.gameObject.SetActive(false),
+            (x) => Destroy(x.gameObject)
+        );
     }
 
     public void PlaceFrame(VDP1Frame frame)
@@ -49,37 +77,56 @@ public class SpritePlacer : SerializedMonoBehaviour
         if (_frame is null) return;
 
         foreach (var renderer in activeSprites)
-        {
             spritePool.Release(renderer);
-        }
         activeSprites.Clear();
+
+        foreach (var mesh in activeMeshes)
+            meshPool.Release(mesh);
+        activeMeshes.Clear();
 
         for (int i = 0; i < _frame.SpriteEntries.Count; i++)
         {
             var entry = _frame.SpriteEntries[i];
 
+            var sprite = GetSpriteFromAddress(entry.textureAddress);
+            if (sprite is null)
+            {
+                Debug.LogError($"Missing texture: {entry.textureAddress}");
+            }
             if (entry is ScaledSpriteEntry scaledSprite)
             {
-                var sprite = GetSprite(scaledSprite.textureAddress);
-                if (sprite is not null)
-                {
-                    PlaceSprite(sprite, scaledSprite.position, scaledSprite.reversed, i);
-                }
+                //get new renderer
+                var renderer = spritePool.Get();
+                renderer.sprite = sprite;
+
+                // currentSpritesDictionary.Add(textureAddress, renderer);
+
+                activeSprites.Add(renderer);
+                PlaceSprite(renderer, scaledSprite.position, scaledSprite.reversed, i);
             }
             else if (entry is DistortedSpriteEntry distortedSprite)
             {
+                var meshCollector = meshPool.Get();
+                activeMeshes.Add(meshCollector);
 
+                meshCollector.transform.localPosition = new Vector3(0, 0, i * -zGap);
+
+                meshCollector.UpdateMesh(distortedSprite.vertices, _offset, sprite);
             }
         }
     }
 
     void PlaceSprite(SpriteRenderer renderer, Vector2Int position, bool reversed, int num)
     {
-        const float zGap = 0.01f; //Note: if there are more than 1000 sprites (unlikely) they might clip into the camera
         renderer.transform.localPosition = new Vector3(position.x, -position.y, num * -zGap) + _offset;
         renderer.flipX = reversed;
         renderer.sortingOrder = num;
         renderer.gameObject.SetActive(true);
+    }
+
+    void PlaceDistortedSprite(MeshCollector meshCollector)
+    {
+
     }
 
     Sprite GetSpriteFromAddress(string textureAddress)

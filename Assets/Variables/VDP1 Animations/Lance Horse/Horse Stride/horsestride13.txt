@@ -1,0 +1,384 @@
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 69, ya = 152, xb = 87, yb = 23
+Texture address = 00023420
+Texture width = 88, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 70, ya = 186, xb = 15, yb = 15
+Texture address = 000242A0
+Texture width = 16, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 89, y1 = 166, x2 = 100, y2 = 188
+x3 = 71, y3 = 202, x4 = 60, y4 = 180
+Texture address = 00024120
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 89, ya = 174, xb = 23, yb = 31
+Texture address = 00023FA0
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 120, ya = 176, xb = 23, yb = 39
+Texture address = 00024A80
+Texture width = 24, height = 40
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 98, ya = 181, xb = 31, yb = 39
+Texture address = 00022CA0
+Texture width = 32, height = 40
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 88, ya = 133, xb = 39, yb = 23
+Texture address = 00022580
+Texture width = 40, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 106, y1 = 171, x2 = 128, y2 = 162
+x3 = 139, y3 = 193, x4 = 116, y4 = 201
+Texture address = 00024C60
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 125, ya = 176, xb = 23, yb = 31
+Texture address = 000230A0
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 118, ya = 176, xb = 23, yb = 31
+Texture address = 00022F20
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 92, ya = 157, xb = 31, yb = 23
+Texture address = 000229E0
+Texture width = 32, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 96, ya = 145, xb = 39, yb = 31
+Texture address = 00022760
+Texture width = 40, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 93, ya = 169, xb = 39, yb = 15
+Texture address = 00022B60
+Texture width = 40, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 107, ya = 142, xb = 23, yb = 23
+Texture address = 00023C60
+Texture width = 24, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 118, y1 = 209, x2 = 142, y2 = 207
+x3 = 144, y3 = 231, x4 = 120, y4 = 232
+Texture address = 00025020
+Texture width = 24, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 126, ya = 208, xb = 23, yb = 31
+Texture address = 00024EA0
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 111, ya = 150, xb = 15, yb = 15
+Texture address = 00023F20
+Texture width = 16, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 58, y1 = 216, x2 = 63, y2 = 192
+x3 = 79, y3 = 196, x4 = 73, y4 = 220
+Texture address = 00024440
+Texture width = 24, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 64, y1 = 182, x2 = 86, y2 = 191
+x3 = 77, y3 = 213, x4 = 55, y4 = 205
+Texture address = 00024320
+Texture width = 24, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 83, ya = 186, xb = 15, yb = 7
+Texture address = 00024800
+Texture width = 16, height = 8
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 88, y1 = 211, x2 = 99, y2 = 189
+x3 = 113, y3 = 196, x4 = 102, y4 = 218
+Texture address = 000249C0
+Texture width = 24, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 71, y1 = 190, x2 = 91, y2 = 176
+x3 = 109, y3 = 202, x4 = 90, y4 = 216
+Texture address = 00024840
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 108, y1 = 168, x2 = 112, y2 = 192
+x3 = 80, y3 = 196, x4 = 77, y4 = 173
+Texture address = 00024680
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 106, ya = 175, xb = 23, yb = 31
+Texture address = 00024500
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 80, ya = 156, xb = 87, yb = 23
+Texture address = 00023840
+Texture width = 88, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 128, ya = 192, xb = 23, yb = 15
+Texture address = 00024DE0
+Texture width = 24, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 149, ya = 171, xb = 31, yb = 15
+Texture address = 00028180
+Texture width = 32, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 132, ya = 191, xb = 23, yb = 15
+Texture address = 000254A0
+Texture width = 24, height = 16
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 132, ya = 184, xb = 23, yb = 31
+Texture address = 00025320
+Texture width = 24, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 99, y1 = 209, x2 = 135, y2 = 193
+x3 = 145, y3 = 215, x4 = 109, y4 = 231
+Texture address = 00025760
+Texture width = 40, height = 24
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Distorted Sprite
+x1 = 129, y1 = 184, x2 = 150, y2 = 208
+x3 = 125, y3 = 229, x4 = 104, y4 = 204
+Texture address = 00025560
+Texture width = 32, height = 32
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace
+
+Scaled Sprite
+Zoom Point: Center-center
+xa = 132, ya = 176, xb = 23, yb = 39
+Texture address = 00025140
+Texture width = 24, height = 40
+Texture read direction: Normal
+Pre-clipping Enabled
+Transparent Pixel Enabled
+Color mode: 4 BPP(16 color LUT)
+Color lookup table: 00022560
+Color Calc. mode: Replace

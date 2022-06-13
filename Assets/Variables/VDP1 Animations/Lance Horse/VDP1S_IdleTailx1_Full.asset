@@ -13,11 +13,19 @@ MonoBehaviour:
   m_Name: VDP1S_IdleTailx1_Full
   m_EditorClassIdentifier: 
   _frames:
-  - {fileID: 11400000, guid: 8a3beae4e80d27f499ecbf305357f5ca, type: 2}
-  - {fileID: 11400000, guid: e8d916ca6e029e44f9fd4d092e8a57cc, type: 2}
-  - {fileID: 11400000, guid: 1616dbc33417c2c43b17716dbbff8167, type: 2}
-  - {fileID: 11400000, guid: e59160a97bd981d489013a0195e2e22e, type: 2}
-  - {fileID: 11400000, guid: 19a99f8c932d48f45a16815fa4c77577, type: 2}
-  - {fileID: 11400000, guid: 820a70858b589f541b2911607723105c, type: 2}
-  - {fileID: 11400000, guid: 4cb0fb5f527038e44a332c1a1c713802, type: 2}
-  - {fileID: 11400000, guid: c2e314447fdadbe42b7f4de4f373a7c4, type: 2}
+  - frame: {fileID: 11400000, guid: 8a3beae4e80d27f499ecbf305357f5ca, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: e8d916ca6e029e44f9fd4d092e8a57cc, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1616dbc33417c2c43b17716dbbff8167, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: e59160a97bd981d489013a0195e2e22e, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 19a99f8c932d48f45a16815fa4c77577, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 820a70858b589f541b2911607723105c, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 4cb0fb5f527038e44a332c1a1c713802, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c2e314447fdadbe42b7f4de4f373a7c4, type: 2}
+    framesToPlay: 1

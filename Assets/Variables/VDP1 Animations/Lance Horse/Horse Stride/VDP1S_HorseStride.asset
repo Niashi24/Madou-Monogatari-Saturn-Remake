@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b096c21a95ced604c98079f6494eb3aa, type: 3}
+  m_Name: VDP1S_HorseStride
+  m_EditorClassIdentifier: 
+  _frames:
+  - frame: {fileID: 11400000, guid: 0e4434ba5ee3d8640bc04215e59a7b90, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 803e25a6b7b2b454c93f8d134ffee14d, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: d51120071882bd0449211568f95cb4fd, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: b410358d35643e34b8706069569eb41e, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 5e0c8a3ab92f88343b5285bc4ba95c9e, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: fde9757680592cf47bd53576c7e2968f, type: 2}
+    framesToPlay: 8
+  - frame: {fileID: 11400000, guid: c18888921ed50f9449a88e9b0d20fa2f, type: 2}
+    framesToPlay: 8
+  - frame: {fileID: 11400000, guid: 5af48c4926fef51448e01d7d6808f790, type: 2}
+    framesToPlay: 8
+  - frame: {fileID: 11400000, guid: 5881bcb9522a3574788fd09a3f9ce37e, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 18d60e2e13e334b4bb4c17da6232f250, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 1101a7c3ac0fa3f459da14dce5f08a45, type: 2}
+    framesToPlay: 5
+  - frame: {fileID: 11400000, guid: 8bc4160e81b334e4da6e665665158ad1, type: 2}
+    framesToPlay: 5
+  - frame: {fileID: 11400000, guid: 65a0ca3ce5dbeee43be40f51bbbf4098, type: 2}
+    framesToPlay: 5
+  - frame: {fileID: 11400000, guid: a8dd92c94ef5b704996dde4f4f500fa0, type: 2}
+    framesToPlay: 5
+  - frame: {fileID: 11400000, guid: d6709b75fda20844387fb5c51f25c629, type: 2}
+    framesToPlay: 5
+  - frame: {fileID: 11400000, guid: 687a8b9802d433048a9383c567ab9f5b, type: 2}
+    framesToPlay: 5
+  - frame: {fileID: 11400000, guid: ecca66814c08bba45bf98331d09ee1f8, type: 2}
+    framesToPlay: 5
+  - frame: {fileID: 11400000, guid: 6748d525b2a0ef74686c96ee8d70bfc4, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: ef89ec316d9806c40a2c4df417621cf5, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: f4d6372ff325b4f44be892a0867e83a9, type: 2}
+    framesToPlay: 15
+  - frame: {fileID: 11400000, guid: f4902926a1aeec64eb0905a4cb3b73e3, type: 2}
+    framesToPlay: 15
+  - frame: {fileID: 11400000, guid: 51e1882b28f303542831b3e7772b3ff6, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: 826aa78d672eb8d4a9279e1813b3a566, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: 43a8b66f61bfa0b4d8c8ff08aacb16fe, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: 6dab2583b9b6fb343bdd1a5d23ea7f3f, type: 2}
+    framesToPlay: 1
+  fps: 60
