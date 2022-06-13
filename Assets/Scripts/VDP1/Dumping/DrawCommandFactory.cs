@@ -14,7 +14,8 @@ namespace LS.VDP1.Commands.Editor
         {
             new SystemClippingCommandWorker(),
             new UserClippingCommandWorker(),
-            new ScaledSpriteCommandWorker()
+            new ScaledSpriteCommandWorker(),
+            new DistortedSpriteCommandWorker()
         };
 
         [Button]

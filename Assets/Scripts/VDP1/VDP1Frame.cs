@@ -6,7 +6,7 @@ using Sirenix.OdinInspector;
 [CreateAssetMenu(menuName = "VDP1/Frame Asset")]
 public class VDP1Frame : ScriptableObject
 {
-    [SerializeField]
+    [SerializeReference]
     List<SpriteEntry> spriteEntries = new();
     public List<SpriteEntry> SpriteEntries => spriteEntries;
 
@@ -20,10 +20,15 @@ public class VDP1Frame : ScriptableObject
     
         foreach (var command in commands)
             if (command is LS.VDP1.Commands.ScaledSpriteCommand scaledSprite)
-                spriteEntries.Add(new SpriteEntry() {
+                spriteEntries.Add(new ScaledSpriteEntry() {
                     textureAddress = scaledSprite.textureAddress,
                     position = new(scaledSprite.xa, scaledSprite.ya),
                     reversed = scaledSprite.textureReadDirection != LS.VDP1.Commands.TextureReadDirection.Normal
+                });
+            else if (command is LS.VDP1.Commands.DistortedSpriteCommand distortedSprite)
+                spriteEntries.Add(new DistortedSpriteEntry() {
+                    textureAddress = distortedSprite.textureAddress,
+                    vertices = distortedSprite.vertices
                 });
     }
     #endif

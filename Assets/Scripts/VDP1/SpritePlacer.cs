@@ -12,16 +12,29 @@ public class SpritePlacer : SerializedMonoBehaviour
     [SerializeField]
     TextureDictionary _dict;
 
-    [SerializeField]
-    Dictionary<string, SpriteRenderer> currentSpritesDictionary = new();
+    ObjectPool<SpriteRenderer> spritePool;
+
+    List<SpriteRenderer> activeSprites = new();
 
     [SerializeField]
-    [OnValueChanged(nameof(PlaceCurrentFrame))]
     Vector3 _offset;
     
     [SerializeField]
-    [OnValueChanged(nameof(PlaceCurrentFrame))]
     VDP1Frame _frame;
+
+    void Start() {
+        spritePool = new ObjectPool<SpriteRenderer>(
+            () => {
+                var gameObj = new GameObject("Sprite");
+                gameObj.transform.parent = transform;
+                gameObj.SetActive(false);
+                return gameObj.AddComponent<SpriteRenderer>();
+            },
+            (x) => x.gameObject.SetActive(true),
+            (x) => x.gameObject.SetActive(false),
+            (x) => Destroy(x.gameObject)
+        );    
+    }
 
     public void PlaceFrame(VDP1Frame frame)
     {
@@ -29,50 +42,64 @@ public class SpritePlacer : SerializedMonoBehaviour
         PlaceCurrentFrame();
     }
 
+    [DisableInEditorMode]
     [Button]
     public void PlaceCurrentFrame()
     {
         if (_frame is null) return;
 
-        foreach (var renderer in currentSpritesDictionary.Values)
+        foreach (var renderer in activeSprites)
         {
-            renderer.gameObject.SetActive(false);
+            spritePool.Release(renderer);
         }
+        activeSprites.Clear();
 
         for (int i = 0; i < _frame.SpriteEntries.Count; i++)
         {
             var entry = _frame.SpriteEntries[i];
-            var sprite = GetSprite(entry.textureAddress);
-            if (sprite is not null)
+
+            if (entry is ScaledSpriteEntry scaledSprite)
             {
-                PlaceSprite(sprite, entry.position, entry.reversed, i);
+                var sprite = GetSprite(scaledSprite.textureAddress);
+                if (sprite is not null)
+                {
+                    PlaceSprite(sprite, scaledSprite.position, scaledSprite.reversed, i);
+                }
+            }
+            else if (entry is DistortedSpriteEntry distortedSprite)
+            {
+
             }
         }
     }
 
     void PlaceSprite(SpriteRenderer renderer, Vector2Int position, bool reversed, int num)
     {
-        renderer.transform.localPosition = new Vector3(position.x, -position.y) + _offset;
+        const float zGap = 0.01f; //Note: if there are more than 1000 sprites (unlikely) they might clip into the camera
+        renderer.transform.localPosition = new Vector3(position.x, -position.y, num * -zGap) + _offset;
         renderer.flipX = reversed;
         renderer.sortingOrder = num;
         renderer.gameObject.SetActive(true);
     }
 
+    Sprite GetSpriteFromAddress(string textureAddress)
+    {
+        if (_dict.addressSpriteDictionary.ContainsKey(textureAddress))
+            return _dict.addressSpriteDictionary[textureAddress];
+        return null;
+    }
+
     SpriteRenderer GetSprite(string textureAddress)
     {
-        if (currentSpritesDictionary.ContainsKey(textureAddress))
-            return currentSpritesDictionary[textureAddress];
-
-        //doesn't already have a sprite loaded
         if (_dict.addressSpriteDictionary.ContainsKey(textureAddress))
         {
-            //create new renderer
-            var gameObj = new GameObject(textureAddress);
-            gameObj.transform.parent = transform;
-            var renderer = gameObj.AddComponent<SpriteRenderer>();
+            //get new renderer
+            var renderer = spritePool.Get();
             renderer.sprite = _dict.addressSpriteDictionary[textureAddress];
 
-            currentSpritesDictionary.Add(textureAddress, renderer);
+            // currentSpritesDictionary.Add(textureAddress, renderer);
+
+            activeSprites.Add(renderer);
 
             return renderer;
         }
