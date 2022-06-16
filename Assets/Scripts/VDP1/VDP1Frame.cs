@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
-[CreateAssetMenu(menuName = "VDP1/Frame Asset")]
+[CreateAssetMenu(menuName = "VDP1/Frame Asset", fileName = "VDP1F_")]
 public class VDP1Frame : ScriptableObject
 {
     [SerializeReference]

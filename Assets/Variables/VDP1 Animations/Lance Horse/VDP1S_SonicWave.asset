@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b096c21a95ced604c98079f6494eb3aa, type: 3}
+  m_Name: VDP1S_SonicWave
+  m_EditorClassIdentifier: 
+  _frames:
+  - frame: {fileID: 11400000, guid: 87ca5f46dac022a4fad241d771c5769a, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 5888f23b917061645912d92f4f5244f7, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: c0abd301a6b19f048af16277876557c8, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 5eb67b40ebe0b154ca5bdb014281d63a, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: c4c2048a9e980b54db440ae73f8982b9, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 4cad22fe879340d4ebaada7419c5f515, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 4b3df61091e9282429d03f28acd34151, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: 6e91f23e215712a4f9c6530db2e52ccd, type: 2}
+    framesToPlay: 6
+  - frame: {fileID: 11400000, guid: ee0c8dc20d38d7d4ba80093c12889a80, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: e6ef4efc1d77c3e4d966cd86909af2b6, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: be795b2b5dfe81c478762a1b4f750aa6, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: 9e48c92cdca7723449cd79bedc937243, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: 04ce8674420aabc469358a5c96db1abc, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: 0fe45e4a69b3de343867a87702b3e335, type: 2}
+    framesToPlay: 4
+  - frame: {fileID: 11400000, guid: a076fae977e34c24bbe594e37bbeb2ad, type: 2}
+    framesToPlay: 8
+  fps: 60

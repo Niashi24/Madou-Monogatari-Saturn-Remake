@@ -237,10 +237,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _frames:
-    useReference: 0
-    value: {fileID: 11400000, guid: cb08f295c8ec6d5478150694dbc8513d, type: 2}
+    useReference: 1
+    value: {fileID: 11400000, guid: f2b01115b8eef0145bf5d1272fda608e, type: 2}
     reference:
-      _object: {fileID: 11400000, guid: 2ca7f81a61644b04980f3505aa33af02, type: 2}
+      _object: {fileID: 11400000, guid: ab914a2bfbf431c49bf5e3281a410cf7, type: 2}
   _stillFrame: {fileID: 11400000, guid: 23cf0fb8c99da4648b4c8e18bf403838, type: 2}
   secondsBetweenAnimations: 1
   _placer: {fileID: 825056842}

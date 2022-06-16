@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db31bd5b2618e964cacd6b57414eb3bf, type: 3}
-  m_Name: New Texture Dictionary
+  m_Name: Main Texture Dictionary
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -105,6 +105,11 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 9ef15f8b6ddc72f418fce1749e378623, type: 3}
     - {fileID: 21300000, guid: 50db2e289686879408a9aaed0839b75f, type: 3}
     - {fileID: 21300000, guid: bf718e78b1db19b46a7ff5109064c504, type: 3}
+    - {fileID: 21300000, guid: 53a2f532844c40845ac781fdad90f7d2, type: 3}
+    - {fileID: 21300000, guid: bf9ad1ca34954094f88a4d8eb8b81c91, type: 3}
+    - {fileID: 21300000, guid: dbd521ac4db0d5448b257766472c15a1, type: 3}
+    - {fileID: 21300000, guid: c869705ed684e274bab51dc45cb027a6, type: 3}
+    - {fileID: 21300000, guid: 38f05aec6e6fda74ca5e79a0ca5e1553, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -123,7 +128,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 89
+      Data: 94
     - Name: 
       Entry: 7
       Data: 
@@ -1189,6 +1194,66 @@ MonoBehaviour:
     - Name: $v
       Entry: 10
       Data: 88
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: 00023E00
+    - Name: $v
+      Entry: 10
+      Data: 89
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: 00023D80
+    - Name: $v
+      Entry: 10
+      Data: 90
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: 00028F60
+    - Name: $v
+      Entry: 10
+      Data: 91
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: 00028BA0
+    - Name: $v
+      Entry: 10
+      Data: 92
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: 000299E0
+    - Name: $v
+      Entry: 10
+      Data: 93
     - Name: 
       Entry: 8
       Data: 

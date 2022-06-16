@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986eb2bb33f95124d90da1c3eea63924, type: 3}
+  m_Name: Lance Horse Animation Test
+  m_EditorClassIdentifier: 
+  _value:
+    valueWeightDictionary:
+      entries:
+      - key: {fileID: 11400000, guid: f2b01115b8eef0145bf5d1272fda608e, type: 2}
+        value: 1
+      - key: {fileID: 11400000, guid: 81e4dd2d587e66248b7a87a1a04981b9, type: 2}
+        value: 1
+      - key: {fileID: 11400000, guid: e6e679dacb84cb1428e7c73a0d35a988, type: 2}
+        value: 1
+      - key: {fileID: 11400000, guid: 7d895d65fdcd86b40b2ace701be4eefb, type: 2}
+        value: 1
+      - key: {fileID: 11400000, guid: cb08f295c8ec6d5478150694dbc8513d, type: 2}
+        value: 1

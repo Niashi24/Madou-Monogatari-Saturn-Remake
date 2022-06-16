@@ -92,6 +92,7 @@ public class SpritePlacer : SerializedMonoBehaviour
             if (sprite is null)
             {
                 Debug.LogError($"Missing texture: {entry.textureAddress}");
+                continue;
             }
             if (entry is ScaledSpriteEntry scaledSprite)
             {
