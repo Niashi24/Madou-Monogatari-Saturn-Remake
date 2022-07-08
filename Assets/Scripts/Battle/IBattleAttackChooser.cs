@@ -6,5 +6,5 @@ public interface IBattleAttackChooser
 {
     IEnumerator ChooseAttack();
 
-    BattleAttack Move {get;}
+    BattleMove Move {get;}
 }

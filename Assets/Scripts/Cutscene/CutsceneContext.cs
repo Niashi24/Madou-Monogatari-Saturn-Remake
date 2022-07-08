@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class CutsceneContext
 {
-    public CutsceneRunner Controller;
+    public ICutsceneRunner Controller;
     public List<CutsceneAction> actions;
     public int currentIndex;
 }

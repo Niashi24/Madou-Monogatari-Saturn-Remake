@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
-public class CutsceneRunner : MonoBehaviour
+public class CutsceneRunner : MonoBehaviour, ICutsceneRunner
 {
     [SerializeReference]
     List<CutsceneAction> actions = new();
@@ -27,12 +27,6 @@ public class CutsceneRunner : MonoBehaviour
         if (currentCutscene != null)
             StopCoroutine(currentCutscene);
         currentCutscene = StartCoroutine(RunCutsceneCoroutine());
-    }
-
-    [Button]
-    public void StopCutscene()
-    {
-        StopAllCoroutines();
     }
 
     IEnumerator RunCutsceneCoroutine()
@@ -61,6 +55,12 @@ public class CutsceneRunner : MonoBehaviour
         
     }
 
-    // [SerializeField]
-    // int f;
+    [Button]
+    public void StopCutscene()
+    {
+        StopAllCoroutines();
+    }
+
+    Coroutine ICutsceneRunner.StartCoroutine(IEnumerator routine)
+        => StartCoroutine(routine);
 }

@@ -7,6 +7,4 @@ public class BattleContext
 {
     public BattleUnit[] allies;
     public BattleUnit[] enemies;
-
-    
 }

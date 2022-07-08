@@ -15,3 +15,4 @@ public class EndCutsceneAction : CutsceneAction
         return context.actions.Count;
     }
 }
+
