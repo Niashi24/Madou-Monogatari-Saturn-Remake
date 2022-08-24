@@ -53,8 +53,16 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
-    _object: {fileID: 4957853572093372212}
+    rid: 6149247768313724962
   _rect: {fileID: 4957853572093372214}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724962
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 4957853572093372212}
 --- !u!114 &4957853572093372212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +187,16 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
-    _object: {fileID: 4957853572392405467}
+    rid: 6149247768313724941
   _rect: {fileID: 6569534607983569991}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724941
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 4957853572392405467}
 --- !u!114 &4957853572392405467
 MonoBehaviour:
   m_ObjectHideFlags: 0

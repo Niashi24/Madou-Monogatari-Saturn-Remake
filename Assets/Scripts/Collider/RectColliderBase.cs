@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using LS.Utilities;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public abstract class RectColliderBase : MonoBehaviour
@@ -13,9 +14,11 @@ public abstract class RectColliderBase : MonoBehaviour
     [SerializeField]
     Color _debugColor = Color.green;
 
-    [SerializeField]
-    ObjectReference<IInteractable> _interactable;
-    public IInteractable Interactable => _interactable.HasValue ? _interactable.Value : new NullInteractable(this);
+    [SerializeReference]
+    [Required]
+    IInteractable _interactable;
+
+    public IInteractable Interactable => _interactable;
 
     void OnDrawGizmos() {
         if (!isActiveAndEnabled) return;

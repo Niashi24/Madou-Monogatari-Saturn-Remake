@@ -6,7 +6,7 @@ public class BattleAttack
 {
     public BattleStats Stats;
     public BattleMove Move;
-    public BattleUnit Target;
+    public List<BattleUnit> Targets;
     
     public IEnumerator PlayAnimation(BattleContext context)
     {

@@ -4091,9 +4091,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6222384689321288542}
-  - component: {fileID: 9001346451849743531}
+  - component: {fileID: 284496879685749683}
   m_Layer: 0
-  m_Name: BattleManager
+  m_Name: BattleTransitionManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4115,7 +4115,7 @@ Transform:
   m_Father: {fileID: 4126675796490363070}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9001346451849743531
+--- !u!114 &284496879685749683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4124,25 +4124,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6565685457938704760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de9e9364cae3b0d47be2a73cb630ca59, type: 3}
+  m_Script: {fileID: 11500000, guid: c61f965535238614fa7c189792fac8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _battleScene:
     sceneAsset: {fileID: 0}
     scenePath: 
-  _growth: {fileID: 0}
-  _allyFormation:
-    useReference: 0
-    value:
-      _object: {fileID: 0}
-    reference:
-      _object: {fileID: 0}
-  _enemyFormation:
-    useReference: 0
-    value:
-      _object: {fileID: 0}
-    reference:
-      _object: {fileID: 0}
 --- !u!1 &6854116162895222174
 GameObject:
   m_ObjectHideFlags: 0

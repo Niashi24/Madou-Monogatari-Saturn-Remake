@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Battle/Move")]
-public class BattleMove : ScriptableObject
+public abstract class BattleMove : ScriptableObject
 {
     [SerializeField]
     GameObject _animationPrefab;
@@ -14,14 +14,16 @@ public class BattleMove : ScriptableObject
     TargetType _targetType;
     public TargetType TargetType => _targetType;
 
-    [SerializeField]
-    int _baseATK;
-    public int BaseATK => _baseATK;
+    [SerializeField, Tooltip("Base attack constant for how much damage the move does.")]
+    int _attackConstant;
+    public int AttackConstant => _attackConstant;
     
     public IEnumerator PlayAnimation(BattleAttack context)
     {
         throw new NotImplementedException();
     }
+
+    public abstract IEnumerator DoAffect(BattleAttack context);
 }
 
 public enum TargetType {Single, All}

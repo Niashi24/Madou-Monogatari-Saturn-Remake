@@ -371,6 +371,14 @@ PrefabInstance:
       propertyPath: _initialDirection.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2918674921502543997, guid: a45ea6e4836a349449394da0cffb364a, type: 3}
+      propertyPath: _interactable
+      value: 6149247768313724961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918674921502543997, guid: a45ea6e4836a349449394da0cffb364a, type: 3}
+      propertyPath: managedReferences[6149247768313724961]
+      value: Assembly-CSharp NullInteractable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45ea6e4836a349449394da0cffb364a, type: 3}
 --- !u!114 &479388338 stripped
@@ -578,6 +586,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: OnUseEntrance
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -593,6 +604,9 @@ MonoBehaviour:
   _defaultEntranceData:
     _spawnPoint: {fileID: 1914258151}
     _playerSpawnDirection: {x: 0, y: 1}
+    OnUseEntrance:
+      m_PersistentCalls:
+        m_Calls: []
   _playerAnimator: {fileID: 479388338}
 --- !u!114 &983154589
 MonoBehaviour:

@@ -228,8 +228,15 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724949
+  _OldInteractable:
     _object: {fileID: 0}
   _rect: {fileID: 139173751}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724949
+      type: {class: NullInteractable, ns: , asm: Assembly-CSharp}
 --- !u!1 &142989149
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,8 +885,18 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724950
+  _OldInteractable:
     _object: {fileID: 478704582}
   _rect: {fileID: 478704580}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724950
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 478704582}
 --- !u!114 &478704582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1088,6 +1105,8 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: dc5a878700ea52e4bbbbc5750539e3f2, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724951
+  _OldInteractable:
     _object: {fileID: 542634281}
   _rect:
     serializedVersion: 2
@@ -1095,6 +1114,14 @@ MonoBehaviour:
     y: -11
     width: 22
     height: 4
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724951
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 542634281}
 --- !u!212 &542634284
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1231,8 +1258,15 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724952
+  _OldInteractable:
     _object: {fileID: 0}
   _rect: {fileID: 648465451}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724952
+      type: {class: NullInteractable, ns: , asm: Assembly-CSharp}
 --- !u!212 &648465453
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1350,6 +1384,18 @@ PrefabInstance:
       propertyPath: _scene.sceneAsset
       value: 
       objectReference: {fileID: 102900000, guid: 3738a6084053be04da79090140e611c4, type: 3}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: _interactable
+      value: 6149247768313724947
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: managedReferences[6149247768313724947]
+      value: Assembly-CSharp ObjectReferenceInteractable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: managedReferences[6149247768313724947]._interactable._object
+      value: 
+      objectReference: {fileID: 918864605}
     - target: {fileID: 4957853572093372214, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -1453,6 +1499,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6569534607983569991, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
   m_PrefabInstance: {fileID: 918864603}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &918864605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4957853572093372212, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+  m_PrefabInstance: {fileID: 918864603}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6b740758144184298946ed5a8dad85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1084895543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1649,8 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: dc5a878700ea52e4bbbbc5750539e3f2, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724953
+  _OldInteractable:
     _object: {fileID: 1173190475}
   _rect:
     serializedVersion: 2
@@ -1599,6 +1658,14 @@ MonoBehaviour:
     y: -11
     width: 22
     height: 4
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724953
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 1173190475}
 --- !u!114 &1173190474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1885,8 +1952,18 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724954
+  _OldInteractable:
     _object: {fileID: 1348940120}
   _rect: {fileID: 1348940119}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724954
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 1348940120}
 --- !u!1 &1366917135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,8 +2078,18 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: dc5a878700ea52e4bbbbc5750539e3f2, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724955
+  _OldInteractable:
     _object: {fileID: 1366917137}
   _rect: {fileID: 1366917139}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724955
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 1366917137}
 --- !u!224 &1366917139
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2038,6 +2125,18 @@ PrefabInstance:
       propertyPath: _entranceKey
       value: 
       objectReference: {fileID: 11400000, guid: aae7c8fb73703ee419058f91b3d364bf, type: 2}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: _interactable
+      value: 6149247768313724946
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: managedReferences[6149247768313724946]
+      value: Assembly-CSharp ObjectReferenceInteractable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: managedReferences[6149247768313724946]._interactable._object
+      value: 
+      objectReference: {fileID: 1380630507}
     - target: {fileID: 4957853572392405463, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
       propertyPath: m_Name
       value: House A
@@ -2105,6 +2204,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6569534607983569991, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
   m_PrefabInstance: {fileID: 1380630505}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1380630507 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4957853572093372212, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+  m_PrefabInstance: {fileID: 1380630505}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6b740758144184298946ed5a8dad85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1418953151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,6 +2421,8 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: dc5a878700ea52e4bbbbc5750539e3f2, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724957
+  _OldInteractable:
     _object: {fileID: 1418953155}
   _rect:
     serializedVersion: 2
@@ -2318,6 +2430,14 @@ MonoBehaviour:
     y: -11
     width: 22
     height: 4
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724957
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 542634281}
 --- !u!212 &1418953158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2439,8 +2559,18 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724958
+  _OldInteractable:
     _object: {fileID: 1425490254}
   _rect: {fileID: 1425490253}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724958
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 1425490254}
 --- !u!1 &1730155760
 GameObject:
   m_ObjectHideFlags: 0
@@ -2510,8 +2640,18 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724959
+  _OldInteractable:
     _object: {fileID: 1730155762}
   _rect: {fileID: 1730155761}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724959
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 1730155762}
 --- !u!1 &1794263166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2751,8 +2891,15 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 43d5782d505372a449cb7abed259bcbe, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724960
+  _OldInteractable:
     _object: {fileID: 0}
   _rect: {fileID: 2119874126}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724960
+      type: {class: NullInteractable, ns: , asm: Assembly-CSharp}
 --- !u!212 &2119874128
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2941,6 +3088,10 @@ PrefabInstance:
       propertyPath: _rect.height
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 2918674921966526898, guid: a45ea6e4836a349449394da0cffb364a, type: 3}
+      propertyPath: managedReferences[6149247768313724945]
+      value: Assembly-CSharp NullInteractable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45ea6e4836a349449394da0cffb364a, type: 3}
 --- !u!114 &2918674921592759312 stripped
@@ -2969,6 +3120,30 @@ PrefabInstance:
       propertyPath: _scene.sceneAsset
       value: 
       objectReference: {fileID: 102900000, guid: 97b7418565797c2449fb20db04f5b607, type: 3}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: _Interactable
+      value: 6149247768313724937
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: _interactable
+      value: 6149247768313724944
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: managedReferences[6149247768313724937]
+      value: Assembly-CSharp ObjectReferenceInteractable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: managedReferences[6149247768313724944]
+      value: Assembly-CSharp ObjectReferenceInteractable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: managedReferences[6149247768313724937]._interactable._object
+      value: 
+      objectReference: {fileID: 4957853571092949234}
+    - target: {fileID: 4957853572093372213, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+      propertyPath: managedReferences[6149247768313724944]._interactable._object
+      value: 
+      objectReference: {fileID: 4957853571092949235}
     - target: {fileID: 4957853572392405463, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
       propertyPath: m_Name
       value: House B
@@ -2992,3 +3167,19 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6569534607983569991, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
   m_PrefabInstance: {fileID: 4957853571092949232}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4957853571092949234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4957853572093372211, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+  m_PrefabInstance: {fileID: 4957853571092949232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4957853571092949235 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4957853572093372212, guid: d6391cf1ace30a041bf287a19cbb3608, type: 3}
+  m_PrefabInstance: {fileID: 4957853571092949232}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4957853571092949234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6b740758144184298946ed5a8dad85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

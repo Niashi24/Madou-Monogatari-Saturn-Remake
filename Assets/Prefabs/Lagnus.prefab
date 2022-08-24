@@ -110,6 +110,8 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 179cadb78db342245b0b0b46a33389ce, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724938
+  _OldInteractable:
     _object: {fileID: 0}
   _rect:
     serializedVersion: 2
@@ -117,6 +119,11 @@ MonoBehaviour:
     y: -10
     width: 12
     height: 12
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724938
+      type: {class: NullInteractable, ns: , asm: Assembly-CSharp}
 --- !u!114 &6724507515102030534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _input:
-    useReference: 1
+    useReference: 0
     value:
       Left: 0
       Right: 0
@@ -139,7 +146,7 @@ MonoBehaviour:
       Interact: 0
       Moving: 0
     reference:
-      _object: {fileID: 11400000, guid: fcbc89e61deb3ad4fac453fb46a2382b, type: 2}
+      _object: {fileID: 0}
 --- !u!114 &2918674921502543996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +257,7 @@ MonoBehaviour:
   _interactHitbox: {fileID: 2918674921502543997}
   _interactablesLayer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
   _input:
-    useReference: 0
+    useReference: 1
     value:
       Left: 0
       Right: 0
@@ -341,6 +348,8 @@ MonoBehaviour:
   _layer: {fileID: 0}
   _debugColor: {r: 1, g: 0.5019608, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724939
+  _OldInteractable:
     _object: {fileID: 0}
   _rect:
     serializedVersion: 2
@@ -348,6 +357,11 @@ MonoBehaviour:
     y: -10
     width: 12
     height: 12
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724939
+      type: {class: NullInteractable, ns: , asm: Assembly-CSharp}
 --- !u!114 &2918674921966526899
 MonoBehaviour:
   m_ObjectHideFlags: 0

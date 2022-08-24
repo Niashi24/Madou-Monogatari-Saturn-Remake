@@ -5,6 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class BattleContext
 {
-    public BattleUnit[] allies;
-    public BattleUnit[] enemies;
+    public List<BattleUnit> allies;
+    public List<BattleUnit> enemies;
 }

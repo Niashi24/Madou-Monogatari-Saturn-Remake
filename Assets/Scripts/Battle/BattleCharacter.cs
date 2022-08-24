@@ -22,4 +22,9 @@ public class BattleCharacter : ScriptableObject
     {
         return _base.Stats + _growth.GetStatsAtLevel(level);
     }
+
+    public void DealDamage(int damage)
+    {
+        
+    }
 }

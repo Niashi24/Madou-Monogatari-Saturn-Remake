@@ -129,7 +129,7 @@ public class MeshCollector : MonoBehaviour
     public Vector3[] Vertices
     {
         get{
-            if (mesh == null) return default;
+            if (mesh == null || mesh.vertices == null) return default;
             return mesh.vertices;
         }
     }

@@ -69,5 +69,15 @@ MonoBehaviour:
   _layer: {fileID: 11400000, guid: 924564a76856b654cb55fa274f491287, type: 2}
   _debugColor: {r: 0, g: 1, b: 0, a: 1}
   _interactable:
+    rid: 6149247768313724940
+  _OldInteractable:
     _object: {fileID: 7368961449462593515}
   _rect: {fileID: 7368961449462593525}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149247768313724940
+      type: {class: ObjectReferenceInteractable, ns: , asm: Assembly-CSharp}
+      data:
+        _interactable:
+          _object: {fileID: 7368961449462593515}

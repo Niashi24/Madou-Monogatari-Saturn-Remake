@@ -2,29 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using LS.Utilities;
-using System;
+using System.Linq;
+using Sirenix.OdinInspector;
 
 public class BattleManager : MonoSingleton<BattleManager>
 {
-    [SerializeField]
-    SceneReference _battleScene;
+    [SerializeReference]
+    [Required]
+    IBattlePlacer _allyFormation;
 
-    [SerializeField]
-    BattleCharacterGrowth _growth;
+    [SerializeReference]
+    [Required]
+    IBattlePlacer _enemyFormation;
 
-    [SerializeField]
-    ObjectValueReference<IBattlePlacer> _allyFormation;
+    [SerializeReference]
+    [Required]
+    IBattleMoveSelecter _allyMoveSelecter;
 
-    [SerializeField]
-    ObjectValueReference<IBattlePlacer> _enemyFormation;
+    [SerializeReference]
+    [Required]
+    IBattleMoveSelecter _enemyMoveSelecter;
 
-    [SerializeField]
-    ObjectReference<IBattleMoveSelecter> _allyMoveSelecter;
-
-    [SerializeField]
-    ObjectReference<IBattleMoveSelecter> _enemyMoveSelecter;
+    [SerializeReference]
+    [Required]
+    IDamageCalculation _damageCalculator;
 
     List<BattleUnit> AllyUnits, EnemyUnits;
+
+    public BattleContext CurrentContext {get; private set;} = new();
 
     public BattleState State {get; private set;} = BattleState.Start;
 
@@ -44,27 +49,60 @@ public class BattleManager : MonoSingleton<BattleManager>
         // 2. get attacks from players
         //     -note: get all moves at once so can go back
 
-        yield return _allyMoveSelecter.Value.EvaluateAttackSelecter();
-        BattleAttack[] allyMoves = _allyMoveSelecter.Value.GetAttacks();
+        yield return _allyMoveSelecter.EvaluateAttackSelecter();
+        BattleAttack[] allyMoves = _allyMoveSelecter.GetAttacks();
 
         // 3. get attacks from enemies
         //     -note: i guess it doesn't really matter when the enemy chooses for now
         //     -could get changed in the future
         
-        yield return _enemyMoveSelecter.Value.EvaluateAttackSelecter();
-        BattleAttack[] enemyMoves = _enemyMoveSelecter.Value.GetAttacks();
+        yield return _enemyMoveSelecter.EvaluateAttackSelecter();
+        BattleAttack[] enemyMoves = _enemyMoveSelecter.GetAttacks();
 
         // 4. sort all battle units by speed and evaluate all attacks from there
         //     -after each attack, check if battle is over (all players died, all enemies died)
 
+        var ActiveMoves = Join(allyMoves, enemyMoves).OrderBy(x => x.Stats.SPD).ToArray();
 
+        foreach (var move in ActiveMoves)
+        {
+            move.PlayAnimation(CurrentContext);
+            foreach (var target in move.Targets)
+            {
+                int damageDealt = _damageCalculator.CalculateDamage(target, move);
+                target.DealDamage(damageDealt);
+            }
+            //Wait for hit animation
+
+            //Check if any are dead
+                //if so, play death animation
+            
+            //Check if all are dead
+                //if so, end battle
+        }
 
         // 5. repeat at step 2
     }
 
+    private BattleAttack[] Join(BattleAttack[] a, BattleAttack[] b)
+    {
+        BattleAttack[] joined = new BattleAttack[a.Length + b.Length];
+
+        for (int i = 0; i < a.Length; i++)
+            joined[i] = a[i];
+
+        for (int i = 0; i < b.Length; i++)
+            joined[i+a.Length] = b[i];
+
+        return joined;
+    }
+
     private void SetUpBattle(BattleParty allies, BattleParty enemies)
     {
-        AllyUnits = _allyFormation.Value.PlaceCharacters(allies.Characters);
-        EnemyUnits = _enemyFormation.Value.PlaceCharacters(enemies.Characters);
+        AllyUnits = _allyFormation.PlaceCharacters(allies.Characters);
+        EnemyUnits = _enemyFormation.PlaceCharacters(enemies.Characters);
+
+        CurrentContext.allies = AllyUnits;
+        CurrentContext.enemies = EnemyUnits;
     }
 }
