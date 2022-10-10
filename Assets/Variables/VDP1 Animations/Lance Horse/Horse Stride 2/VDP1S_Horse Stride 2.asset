@@ -1,0 +1,366 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b096c21a95ced604c98079f6494eb3aa, type: 3}
+  m_Name: VDP1S_Horse Stride 2
+  m_EditorClassIdentifier: 
+  _frames:
+  - frame: {fileID: 11400000, guid: 5bb9062c87c692845948aad802c14355, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9ecc624b5e64c914ab97c61d9b8ae96f, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 8cdaeca2c7de46748800b377e5cad57a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 77a2d91002f70d141bfa5ae60ffbac1b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a8ea237706f92124daf03dc4c7b89f93, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d72790f91f8818f48a6cc677c63983e6, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: bd20cd6abeb35f948b7c1d72666b0eca, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a9c15abc057285f4e9b2d3445a609a98, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 33efe1d9e64b659469edecec47b4b173, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: eb9f3312d27a0c7449d04772d11e09e9, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: b03882c3f19b11e4c85fc49bac6506d5, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 760c5b85e91fd9345ae54050b22d88bc, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9307eb677b3613542854e46bf5be61de, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1e2b8e65688ad86469c5580748badad6, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 91d26adcffe89664d9f602c8cb4086c9, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ed7c5184a40250e469fefac0b2110503, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 08bb9e17a21dce949b13a955080f8df1, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 7f39ec07efa743b458bbbd9e57ab3e32, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 24f1d61bab998cb4f908fdac08604b65, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 39ff09ee87996744c9c57293e7d83ffe, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d07b32a46bebcc44aa953749adf72d32, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 560340b592225b1468fbcec5e553c9fe, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 28c778c6e5b310d4b8036f9d2ce6838a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 2a77d706a4044f44791588e042b22c50, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 56675e4cb38ffe7458562ac2458271b6, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 7c67ec1c67e154148abcea69f3b5bd7d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cd28ca26c9506164a950d38d672cd74f, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d11fc38062fd2254fb1470038460b077, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 02d17be32f563254d834320854fcef34, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 960ab3a3fa8d7fa4facfde74b6afe381, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 5b25ed3b19a289546afe8c6c733146f5, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d3f10d6a573b26a41ad8b163adb25587, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 5ca8a2f82ca571e42b8dfcfd8d985cc8, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: e6dc895a2a2fa6a4cabf8cee03bc5316, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 317ff37920ab2db4abca2657fbdd5b6b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 35111005b47ae8f44aefe7f6e865aaef, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d77989798326dec40a0171901f2b651c, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c38c01bca343f7b4d9c2d45b6c32ce88, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: fdedfbfb7a9337647a679dd27b448388, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c9c10e55772e8bf45996600952fe1b72, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 98299a5732e7f20488d6426d43f409f3, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 90caa7181f51bed43b269f8ac9449d8e, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: baee12db45173da469d94bf004e3da40, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: eec2361beef512e4788393b97a07e979, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 8776e382fd97f9a4689d55e826ed7a21, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c79dfb33ec33139439de4d7d0654ff5b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 4aecbb8dea812ed478d2a769357cf170, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 75ca7a46be0893946a346e777a74cf5b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 14c4bf4dd86f9ad44be4341747f75ad8, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cae532c6670a7214a8114c5752d1444a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 86b74c3cc17422040a44946153c1575e, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 7961a17d89e5aac438962352b7b419b2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 16aea90dd15fb5849b6b489e938f769a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 3cb78ddf24eaa064fae7007f56731cf3, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9aa6df81dd02605439449eaec02784a3, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ee9858f508b96124788455f3bfd217f1, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: be6a604f17065f94390c6f6804cb9718, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 11ac0894c9bc28a44aa773357da022b0, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cb6e6763597b8974e9c6420ae0e3a91d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 8b7dbe67d9658e043bb3a5d4b251823f, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a095476f5431aa1499eeaa08a03695bc, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: b025688aa13ddaa4b8c101f725f3fe40, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c36db5e16b87daf48b704297155bcbbc, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 20d9823458fea3c4aa1b093fdb593708, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ecb226b33c1f35a4c8bd5c4cc2252b4a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: bd85f7a76da6cab49a2b7b1fbd4b9e68, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 66232ca8e9fbcb6448b9816e3d6bcb38, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: b7ae3f5af2e62ce45b14c743567cf0c8, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: b6d2a8a2c95004848bcb62145f4793bb, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cb632a7af5d1404498fc48cc8fd3820f, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 942a99cdd731fe343b65d398b589d3b2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: dd9b8eabd822a094ebb7792f8d149791, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1160a91f289a742448d8f1f77a167d11, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1416d5affa82798449969035f4f98f03, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: eea50538ec1bfb84cb980a49a60d80e3, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 665b461070e73c24d88ad27c4dc13d33, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c9349fac5662da7478efe17bbdd8cc90, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: f66f24e3a0734c041a21a875c1f336a8, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 2a1e95fa97abde84081305d6d5b1f9d1, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 7bd4404885cd2ec4dbe8533aec7795c2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 57e291363d378e14f9a09293da874ba4, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cb30ba873af001343ae89242936bcd14, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9a1c57bd91af30b4eab5f55c75406889, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 487fb3ca3c57d944281d28c6c0db1154, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 4f2a2cdf15440aa4d8c6e5cc6e06f95d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 05f3e4fe83ade274ca2fca6024b54605, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d760a3721a3092649ac7b906607ac7ab, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ae51dfe41b1de2845991fab5e126b46e, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 2164afc0b88e53b439be6889b4936b7a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 5f5217374a444704f96e2ddfd2da9e69, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: aec61304a27c93b47bed0f6fefb56d8c, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ca40851b948180145817cce29f809d8f, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 45461d56cc036f741bc32c4c7fbed1e5, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d2f2cf05e5457ca42a47f404b3acac86, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: fa1ca300091821f4f95307e8e6aec5ee, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1e76084b3df87a640ae921376837e8d9, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 3a8f98f490d75f347915cdb66c71585d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 49093ec80a219d14f9a5a9b01eb00d64, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 59743be63a242f34fbf15cb76eeb4517, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9b592c1c97a723e4791ea56bec4cb1f2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: bf304bcec4855cb498ef05c30d129a5c, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 09c224aa74cd7db4ab250ec4a1f54cf5, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cad5218ade8997647a484d4b95d55ae0, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a447273e6e99752438541bd6fb9b9403, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: b3f0a5085876574468b7c35b9253cbb8, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ba8a3f9b50fd2fe44aadafbd16775ab2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: bfb94bddf4ab5914aa58174695c84da8, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: bbbce12b892fd7b4da432e9ac3ab6446, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 14a6e481981929347acb7f75dc785577, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 72fd664b6df899f4b91c5989f9f62f89, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 923e13b530e54004d985d7a02b485c61, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9e29a85beb62a65498b94904b6118ef7, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 725db981213f1cd4a8aa26940482b6e9, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c5f143d386ead894ebd9f3a49d971c56, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: f52393804315634488496a5bc03f1bb2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: e8b9fe3b9a1c03049b78b965d68ebce7, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1f00649cc244e0248842b2506a9cb861, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ddbc075e418f7a447b0993227d64b45b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 829e87fc894658c49bb1df55a2b5d6fb, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 8038a7acf0cecee47906dc2511cd24c8, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1bd4d938df90015439271078b730611b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: e9cb91becc0d56d4fbe940ecbe6f0e9a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a4d6975d5eabd6546928aa37f92e86aa, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 23793dfddfbe6f241ab12cccf6940c9c, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 046116bdf403d5c43a2c3c04f87a04ba, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 73ae9ea9fe8e96c42bf0b40ed3be7c0e, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 4b6235f99b3cef34c9b858cfcf995637, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 75281a5f3e64c7640b4f2e32396b8995, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 7c9e51f220d2ed641b75f03147396a96, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 808519d31081bcb4fa28c82590269e23, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 27f4ca07f204a7742954dff57c6dc49a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 18c74f4de901f8249b8a4ff76198ac75, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 53c9d90612d0c7243944e458feca1e28, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 80f23457c9159bd4698fa5658ab3853b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9f875a169d6ca62479e80cdc37ad249a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 49c4ff12cc20f5140bdfdb890b1929f4, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 0db49eb949381104f8825813fe132b72, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ebba4882887ba52479d6d4b9e63c7640, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 45eed24665a9b344da32231e42fee1c9, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 51e527a1a64c64247b130330c53c2f73, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: dde763b3995c63a4b859d7a98e4c9a7d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 2b69d3789359f2d448ed7e60b37fdaad, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d4bf7d63b59f7e8469fd15673d19269e, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: db134a4a73a3d71438e291cca12a5360, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 2f0009ad3612fd84bad5af5ad305e813, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: d4dc0e09dce48ec4fb757d54da86e7f2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: f8c735a39c05fd54cb15d45b786fd9a3, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9f2887592679a2944bb05d301d821d42, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 8fd84a323006ee549bf1aa66e93f6ac9, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: f8a2437e360385048812fc4b38343226, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 78e7582d8f8fd06468fdfbd1cc8258aa, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 9811a475f15fef5458ef6a9541023534, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 7099f0964693a7a4ba75e2eb134f7367, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: e1460e103a5b13c44ba95ff79c805ce7, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c64f58c2c6a3f204c8722f08de97e98a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a8b19e5733a9cdc4bb5f7336134fd625, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 95e3ef499ff1dad489d1a64087a799c3, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 12e6f3f1288b34f4d99a9a70e2a7a1dd, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: ef93cc7620fa68e4187f42794d9f37d1, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 06a2ca3cabb71a449bfc1308d2a68ef9, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 6ce2c60a49b4a9a439763d85be78c52e, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 041f86358fc7f93498101fe197ef18f8, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: e970c2e7f47ec2945b80095b92f1c7da, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1e1f2518913077747b392094f8064d80, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 4e19c2f9a6f8cf442beaeae9bf9be28b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c60094ba4f5332c4f965e9a120748bfa, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: bd2e74545f7fdc746ab15055a8f4b580, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: e7c1d9ac5d5e5994288e584236fb63af, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 60a6e8a33952eeb4db6fc8b902a1917d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 4abf5f47b80508644a6ebf91bf85ea99, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: f2a2ab3e365bc544fab736980556e5f9, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cd6659c7bea74f7498017f764ef06c2e, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: c2aa8be35fd4bcb418fb2427e7df7b42, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 8f32032429b323341a8290399b4994d1, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 096b9f81f4af1e5448c4f92599e62ceb, type: 2}
+    framesToPlay: 1
+  fps: 60

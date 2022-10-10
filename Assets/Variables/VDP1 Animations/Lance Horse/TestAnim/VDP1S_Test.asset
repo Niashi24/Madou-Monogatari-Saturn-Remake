@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b096c21a95ced604c98079f6494eb3aa, type: 3}
+  m_Name: VDP1S_Test
+  m_EditorClassIdentifier: 
+  _frames:
+  - frame: {fileID: 11400000, guid: 4809015dfe19829458d980bcf3b494a7, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 4fb5f5d822d3d104395c0de085b1dbe1, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 5a097475cb5ab7f419569edf75c2a504, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 6da62ec672f949d47b8bdd80ac374686, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: a838bb73e7b08f240b40ec88ed4d4b9d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 762cf48b2056cb648b59ff95209cf68a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 02e1b546ae1ef7e41bc04aadbbb3335d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 2a3bac0fbaf393e4eba63456146a4778, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 56a38d76acc73a0458fa3678fa79e3f2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: bba445f8f28c53e4c9cf8701b2aa62d5, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 08171bc5aac215843bec4a552967819b, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 59aa49e803271d54c999dd27eab356e6, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 6048ba1acc88b9d4cb4a5214216f17e5, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 210ca1dfb91ba02408fe1c07f8e9b214, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 5d5688b8667363441a1fdd43bb69494c, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1c88ee8fe39f9b245ac10bc78a7626df, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 1459ee2ee29aaa84e8e0105cc5ab006d, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 78c6dc949d3899644a6258f420cf6424, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cd9ac10c6c2463240a4f617983495413, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: f98b76142159a6f489f1f256e26cbcbe, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: cc7b69df63056c9469b520c6830c56a5, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: be835d58778d67c4d80f29a0251e9e26, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 157ee9e06cdb77f4795651254213c6f2, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 76f29abfeb3998e479289c2c7e75e34a, type: 2}
+    framesToPlay: 1
+  - frame: {fileID: 11400000, guid: 50a93e617f748dd4da2ecced990f5dee, type: 2}
+    framesToPlay: 1
+  fps: 10

@@ -12,7 +12,7 @@ public class VDP1Frame : ScriptableObject
 
     #if UNITY_EDITOR
     [Button]
-    void PopulateEntries(TextAsset asset)
+    public void PopulateEntries(TextAsset asset)
     {
         if (asset is null) return;
         spriteEntries.Clear();

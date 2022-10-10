@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MoveSelecterPanel : MonoBehaviour, IBattleMoveSelecter
 {
-    
+    // [SerializeField]
+    // BattleMove
 
     public IEnumerator EvaluateAttackSelecter()
     {

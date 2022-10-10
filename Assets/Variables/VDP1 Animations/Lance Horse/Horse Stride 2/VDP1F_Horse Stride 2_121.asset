@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a2eaa597e925946aa75b5f249c1857, type: 3}
+  m_Name: VDP1F_Horse Stride 2_121
+  m_EditorClassIdentifier: 
+  spriteEntries:
+  - rid: 6181505176391909634
+  - rid: 6181505176391909635
+  - rid: 6181505176391909636
+  - rid: 6181505176391909637
+  - rid: 6181505176391909638
+  - rid: 6181505176391909639
+  - rid: 6181505176391909640
+  - rid: 6181505176391909641
+  - rid: 6181505176391909642
+  - rid: 6181505176391909643
+  - rid: 6181505176391909644
+  - rid: 6181505176391909645
+  - rid: 6181505176391909646
+  - rid: 6181505176391909647
+  - rid: 6181505176391909648
+  - rid: 6181505176391909649
+  - rid: 6181505176391909650
+  - rid: 6181505176391909651
+  - rid: 6181505176391909652
+  - rid: 6181505176391909653
+  - rid: 6181505176391909654
+  - rid: 6181505176391909655
+  - rid: 6181505176391909656
+  - rid: 6181505176391909657
+  - rid: 6181505176391909658
+  - rid: 6181505176391909659
+  - rid: 6181505176391909660
+  - rid: 6181505176391909661
+  - rid: 6181505176391909662
+  - rid: 6181505176391909663
+  - rid: 6181505176391909664
+  - rid: 6181505176391909665
+  - rid: 6181505176391909666
+  - rid: 6181505176391909667
+  - rid: 6181505176391909668
+  - rid: 6181505176391909669
+  - rid: 6181505176391909670
+  - rid: 6181505176391909671
+  - rid: 6181505176391909672
+  - rid: 6181505176391909673
+  - rid: 6181505176391909674
+  references:
+    version: 2
+    RefIds:
+    - rid: 6181505176391909634
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 0007D400
+        position: {x: 170, y: 219}
+        reversed: 0
+    - rid: 6181505176391909635
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 0007D400
+        position: {x: 94, y: 218}
+        reversed: 0
+    - rid: 6181505176391909636
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00010A80
+        position: {x: 95, y: 174}
+        reversed: 0
+    - rid: 6181505176391909637
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00010DA0
+        position: {x: 92, y: 206}
+        reversed: 0
+    - rid: 6181505176391909638
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000115E0
+        position: {x: 121, y: 174}
+        reversed: 0
+    - rid: 6181505176391909639
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000115E0
+        position: {x: 121, y: 174}
+        reversed: 0
+    - rid: 6181505176391909640
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000242A0
+        vertices:
+        - {x: 136, y: -129, z: 0}
+        - {x: 145, y: -142, z: 0}
+        - {x: 132, y: -151, z: 0}
+        - {x: 123, y: -138, z: 0}
+    - rid: 6181505176391909641
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00024120
+        vertices:
+        - {x: 157, y: -157, z: 0}
+        - {x: 136, y: -168, z: 0}
+        - {x: 121, y: -140, z: 0}
+        - {x: 142, y: -129, z: 0}
+    - rid: 6181505176391909642
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00024A80
+        position: {x: 147, y: 152}
+        reversed: 0
+    - rid: 6181505176391909643
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00023420
+        vertices:
+        - {x: 102, y: -88, z: 0}
+        - {x: 178, y: -132, z: 0}
+        - {x: 166, y: -152, z: 0}
+        - {x: 90, y: -109, z: 0}
+    - rid: 6181505176391909644
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000229E0
+        position: {x: 164, y: 133}
+        reversed: 0
+    - rid: 6181505176391909645
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00022580
+        position: {x: 164, y: 108}
+        reversed: 0
+    - rid: 6181505176391909646
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00022760
+        position: {x: 166, y: 122}
+        reversed: 0
+    - rid: 6181505176391909647
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00024440
+        vertices:
+        - {x: 109, y: -144, z: 0}
+        - {x: 129, y: -157, z: 0}
+        - {x: 120, y: -170, z: 0}
+        - {x: 100, y: -157, z: 0}
+    - rid: 6181505176391909648
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000249C0
+        vertices:
+        - {x: 122, y: -153, z: 0}
+        - {x: 139, y: -170, z: 0}
+        - {x: 128, y: -181, z: 0}
+        - {x: 111, y: -164, z: 0}
+    - rid: 6181505176391909649
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00024320
+        vertices:
+        - {x: 127, y: -133, z: 0}
+        - {x: 140, y: -153, z: 0}
+        - {x: 120, y: -166, z: 0}
+        - {x: 107, y: -146, z: 0}
+    - rid: 6181505176391909650
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00022CA0
+        vertices:
+        - {x: 156, y: -128, z: 0}
+        - {x: 178, y: -152, z: 0}
+        - {x: 148, y: -179, z: 0}
+        - {x: 127, y: -155, z: 0}
+    - rid: 6181505176391909651
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00027240
+        position: {x: 170, y: 195}
+        reversed: 0
+    - rid: 6181505176391909652
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00022B60
+        vertices:
+        - {x: 141, y: -131, z: 0}
+        - {x: 180, y: -137, z: 0}
+        - {x: 178, y: -153, z: 0}
+        - {x: 138, y: -146, z: 0}
+    - rid: 6181505176391909653
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000230A0
+        vertices:
+        - {x: 179, y: -154, z: 0}
+        - {x: 193, y: -173, z: 0}
+        - {x: 168, y: -192, z: 0}
+        - {x: 153, y: -173, z: 0}
+    - rid: 6181505176391909654
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00027540
+        position: {x: 186, y: 202}
+        reversed: 0
+    - rid: 6181505176391909655
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000278C0
+        position: {x: 200, y: 174}
+        reversed: 0
+    - rid: 6181505176391909656
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00022F20
+        vertices:
+        - {x: 173, y: -146, z: 0}
+        - {x: 192, y: -161, z: 0}
+        - {x: 172, y: -186, z: 0}
+        - {x: 153, y: -170, z: 0}
+    - rid: 6181505176391909657
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00025140
+        position: {x: 186, y: 173}
+        reversed: 0
+    - rid: 6181505176391909658
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00023C60
+        position: {x: 177, y: 119}
+        reversed: 0
+    - rid: 6181505176391909659
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00023F20
+        vertices:
+        - {x: 172, y: -120, z: 0}
+        - {x: 187, y: -124, z: 0}
+        - {x: 184, y: -139, z: 0}
+        - {x: 168, y: -135, z: 0}
+    - rid: 6181505176391909660
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00024840
+        vertices:
+        - {x: 143, y: -135, z: 0}
+        - {x: 157, y: -154, z: 0}
+        - {x: 131, y: -173, z: 0}
+        - {x: 117, y: -154, z: 0}
+    - rid: 6181505176391909661
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00023840
+        vertices:
+        - {x: 122, y: -83, z: 0}
+        - {x: 198, y: -126, z: 0}
+        - {x: 186, y: -147, z: 0}
+        - {x: 110, y: -104, z: 0}
+    - rid: 6181505176391909662
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00024800
+        vertices:
+        - {x: 139, y: -137, z: 0}
+        - {x: 155, y: -140, z: 0}
+        - {x: 153, y: -148, z: 0}
+        - {x: 138, y: -144, z: 0}
+    - rid: 6181505176391909663
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00024680
+        vertices:
+        - {x: 178, y: -160, z: 0}
+        - {x: 158, y: -173, z: 0}
+        - {x: 141, y: -146, z: 0}
+        - {x: 161, y: -133, z: 0}
+    - rid: 6181505176391909664
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00024500
+        position: {x: 172, y: 153}
+        reversed: 0
+    - rid: 6181505176391909665
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000170C0
+        position: {x: 204, y: 192}
+        reversed: 0
+    - rid: 6181505176391909666
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00076460
+        position: {x: 64, y: 36}
+        reversed: 0
+    - rid: 6181505176391909667
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00076460
+        position: {x: 176, y: 36}
+        reversed: 0
+    - rid: 6181505176391909668
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00076460
+        position: {x: 288, y: 36}
+        reversed: 0
+    - rid: 6181505176391909669
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000762C0
+        vertices:
+        - {x: 38, y: -33, z: 0}
+        - {x: 95, y: -33, z: 0}
+        - {x: 90, y: -40, z: 0}
+        - {x: 33, y: -40, z: 0}
+    - rid: 6181505176391909670
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000761C0
+        position: {x: 29, y: 34}
+        reversed: 0
+    - rid: 6181505176391909671
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000762C0
+        vertices:
+        - {x: 38, y: -41, z: 0}
+        - {x: 110, y: -41, z: 0}
+        - {x: 105, y: -48, z: 0}
+        - {x: 33, y: -48, z: 0}
+    - rid: 6181505176391909672
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00076200
+        position: {x: 29, y: 42}
+        reversed: 0
+    - rid: 6181505176391909673
+      type: {class: DistortedSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 000762C0
+        vertices:
+        - {x: 38, y: -49, z: 0}
+        - {x: 110, y: -49, z: 0}
+        - {x: 105, y: -56, z: 0}
+        - {x: 33, y: -56, z: 0}
+    - rid: 6181505176391909674
+      type: {class: ScaledSpriteEntry, ns: , asm: Assembly-CSharp}
+      data:
+        textureAddress: 00076240
+        position: {x: 29, y: 50}
+        reversed: 0

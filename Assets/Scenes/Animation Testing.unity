@@ -237,8 +237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _frames:
-    useReference: 1
-    value: {fileID: 11400000, guid: f2b01115b8eef0145bf5d1272fda608e, type: 2}
+    useReference: 0
+    value: {fileID: 11400000, guid: 82757c2b8f51e55458bd8cdea396ee3a, type: 2}
     reference:
       _object: {fileID: 11400000, guid: ab914a2bfbf431c49bf5e3281a410cf7, type: 2}
   _stillFrame: {fileID: 11400000, guid: 23cf0fb8c99da4648b4c8e18bf403838, type: 2}
@@ -403,7 +403,7 @@ MonoBehaviour:
   _dict: {fileID: 11400000, guid: 6ed85812e911abc479073c3c005b2bee, type: 2}
   _meshCollectorPrefab: {fileID: 453127051637808152, guid: 463479f96d2d8de459fe63eb1b9f27f2, type: 3}
   _offset: {x: -152, y: 122, z: 0}
-  _frame: {fileID: 11400000, guid: c96c8f9bcd1b5344aaabdd471f72bc48, type: 2}
+  _frame: {fileID: 11400000, guid: 50a93e617f748dd4da2ecced990f5dee, type: 2}
 --- !u!4 &825056843
 Transform:
   m_ObjectHideFlags: 0
